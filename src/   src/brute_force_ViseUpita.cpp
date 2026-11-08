@@ -1,6 +1,5 @@
 // P07 - Batched Spatial Queries: BRUTE FORCE sa VISE pravougaonika
 
-
 #include <algorithm>
 #include <chrono>
 #include <cstdint>
