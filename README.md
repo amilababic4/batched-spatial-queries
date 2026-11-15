@@ -6,6 +6,32 @@ Cilj projekta je implementirati i optimizovati grupnu obradu prostornih upita na
 
 Prvo se implementira sekvencijalni brute-force algoritam kao referenca za tačnost, zatim se uvodi prostorno indeksiranje pomoću ravnomjerne mreže (*Uniform Grid*). Nakon toga se obrada optimizuje i paralelizuje na CPU-u korištenjem **OpenMP-a i SIMD-a (AVX2/FMA)**.
 
+## Pokretanje (Linux / WSL / GitHub Codespaces)
+
+Potrebno: g++ 14+ (ili clang 19+), CMake 3.15+.
+
+```bash
+git clone --recursive https://github.com/amilababic4/batched-spatial-queries.git
+cd batched-spatial-queries
+# ako je repo već kloniran bez --recursive:
+git submodule update --init --recursive
+
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER=g++-14
+cmake --build build -j
+```
+
+Programi:
+
+| Program | Šta radi |
+|---|---|
+| `./build/brute_force_ViseUpita` | Brute force, referenca |
+| `./build/psi_seq` | KD-tree (PSI), upiti u jednoj niti |
+| `PARLAY_NUM_THREADS=4 ./build/psi_parlay` | KD-tree, upiti paralelno preko ParlayLib |
+| `OMP_NUM_THREADS=4 ./build/psi_omp --schedule dynamic` | KD-tree, upiti paralelno preko OpenMP |
+
+Opcije za `psi_*`: `--n 200000 --m 2000 --w 0.02 --dist uniform|clustered --seed 42 --repeats 7 --no-check`.
+Svaki `psi_*` program sam provjerava rezultate prema brute forceu i ispisuje `OK` ili `GRESKA`.
+
 ## Dokumentacija
 
 Folder `docs/` sadrži naučno-istraživačke radove, linkove i ostale materijale relevantne za projekat.
