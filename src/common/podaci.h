@@ -7,6 +7,7 @@
 #pragma once
 
 #include <algorithm>
+#include <cmath>
 #include <cstdint>
 #include <random>
 #include <string>
@@ -27,6 +28,14 @@ struct Postavke {
 };
 
 inline double clamp01(double v) { return std::min(1.0, std::max(0.0, v)); }
+
+// Pravougaonik je ispravan ako su granice konacni brojevi i min <= max.
+// (Pravougaonik nulte sirine ili visine je dozvoljen: to je duz ili tacka.)
+inline bool ispravan(const Rect& r) {
+    return std::isfinite(r.xmin) && std::isfinite(r.ymin) &&
+           std::isfinite(r.xmax) && std::isfinite(r.ymax) &&
+           r.xmin <= r.xmax && r.ymin <= r.ymax;
+}
 
 // Tacno isti uslov kao u brute force kodu (ivice se racunaju).
 inline bool unutra(double x, double y, const Rect& r) {
