@@ -1,0 +1,9 @@
+Datum: Sun Nov 15 18:58:33 CET 2026
+CPU: AMD Ryzen 5 7530U with Radeon Graphics
+Broj logickih jezgri (nproc): 12
+Kompajler: /usr/bin/g++-14 (14.2.0)
+Build tip: Release
+PSI verzija: 098365b
+Nas commit: 5dbfc5b
+perf: /usr/lib/linux-tools/6.8.0-149-generic/perf perf version 6.8.12
+Ponavljanja (medijan od): 7
