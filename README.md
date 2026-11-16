@@ -4,7 +4,21 @@ Projekat iz predmeta **Paralelni računarski sistemi**, tema **P07: Batched Spat
 
 Cilj projekta je implementirati i optimizovati grupnu obradu prostornih upita nad zajedničkim skupom dvodimenzionalnih tačaka. Fokus je na **pravougaonim prostornim upitima (2D range queries)**, odnosno pronalaženju svih tačaka koje se nalaze unutar zadane pravougaone oblasti.
 
-Prvo se implementira sekvencijalni brute-force algoritam kao referenca za tačnost, zatim se uvodi prostorno indeksiranje pomoću ravnomjerne mreže (*Uniform Grid*). Nakon toga se obrada optimizuje i paralelizuje na CPU-u korištenjem **OpenMP-a i SIMD-a (AVX2/FMA)**.
+Sekvencijalni brute-force algoritam služi kao referenca za tačnost. Kao prostorni indeks koristi se **KD-stablo iz biblioteke PSI** ([SpaceTreeLib](https://github.com/ucrparlay/SpaceTreeLib), git submodule u `reference/psi`), a grupa upita se obrađuje paralelno na CPU-u preko **OpenMP-a** (`static` i `dynamic` raspoređivanje) i **ParlayLib-a**.
+
+## Trenutno stanje
+
+| Dio | Stanje |
+|---|---|
+| Brute force (`src/brute_force*.cpp`) | gotovo, referenca |
+| KD-tree (PSI), serijski i paralelno (`src/psi_benchmark.cpp`) | gotovo, provjereno prema brute forceu |
+| Testovi posebnih slučajeva (`src/testovi.cpp`, `docs/plan-testiranja.md`) | gotovo, 23 testa |
+| Mjerenja po N, M, broju niti i raspodjeli | gotovo: `1.KD-tree_mjerenja/` (skripta, rezultati, grafikoni, izvještaj) |
+| Mjerenja po veličini pravougaonika | gotovo: `2.Testovi_i_velicine/` |
+| Izvještaji | `1.KD-tree_mjerenja/docs/P07_KD-tree_mjerenja.docx` (KD-tree i broj niti), `2.Testovi_i_velicine/docs/P07_testiranje_i_velicine_pravougaonika.docx` (testovi i veličine pravougaonika) |
+| Uniform Grid, SIMD (AVX2) | nije rađeno: umjesto vlastitog Uniform Grida koristi se KD-tree iz PSI biblioteke |
+
+Odstupanje od inicijalnog plana: umjesto vlastitog *Uniform Grid* indeksa izabrano je gotovo, provjereno KD-stablo iz PSI biblioteke, a doprinos projekta je grupna obrada upita, paralelizacija, provjera tačnosti i mjerenja.
 
 ## Pokretanje (Linux / WSL / GitHub Codespaces)
 
@@ -28,9 +42,38 @@ Programi:
 | `./build/psi_seq` | KD-tree (PSI), upiti u jednoj niti |
 | `PARLAY_NUM_THREADS=4 ./build/psi_parlay` | KD-tree, upiti paralelno preko ParlayLib |
 | `OMP_NUM_THREADS=4 ./build/psi_omp --schedule dynamic` | KD-tree, upiti paralelno preko OpenMP |
+| `./build/testovi` | Testovi ispravnosti (svi moraju ispisati `PROSAO`) |
 
 Opcije za `psi_*`: `--n 200000 --m 2000 --w 0.02 --dist uniform|clustered --seed 42 --repeats 7 --no-check`.
 Svaki `psi_*` program sam provjerava rezultate prema brute forceu i ispisuje `OK` ili `GRESKA`.
+
+### Testovi
+
+```bash
+./build/testovi          # ili: ctest --test-dir build
+```
+
+Pokrivaju slučajeve iz `docs/plan-testiranja.md`: mali, srednji i veliki pravougaonici, prazni pravougaonici i prazan skup tačaka, tačke na ivicama i u uglovima (i tačke za jedan `double` izvan ivice), duži i tačke kao pravougaonici nulte širine ili visine, uske trake, ponovljene koordinate, negativne koordinate i neispravne granice (`xmin > xmax`, `NaN`). Za svaki slučaj očekivani rezultat je zadan ručno, a brute force i KD-tree (serijski, Parlay, OpenMP) moraju vratiti tačno iste id-jeve. Na kraju se porede i nasumični ulazi (ravnomjerni, grupisani i ulazi s koordinatama na mreži 0,01, s mnogo tačaka na ivicama).
+
+PSI za `double` koordinate koristi malu toleranciju na ivicama i bez dodatnog filtera vraća i tačke koje su za jedan `double` izvan pravougaonika. Zato se rezultat stabla još jednom filtrira tačnim uslovom `xmin <= x <= xmax && ymin <= y <= ymax`; test „Tačke za jedan double izvan ivice” to provjerava.
+
+### Mjerenja
+
+```bash
+# pokreće se iz korijena repoa (nakon cmake --build build -j)
+bash 2.Testovi_i_velicine/mjerenja.sh brzo       # kratka proba (~1 min)
+bash 2.Testovi_i_velicine/mjerenja.sh            # N x M x raspodjela x niti (234 mjerenja, ~15 min)
+bash 2.Testovi_i_velicine/mjerenja.sh velicine   # mali / srednji / veliki pravougaonici (w = 0.005, 0.02, 0.1)
+```
+
+Skripta za svako mjerenje bilježi vrijeme izgradnje i upita (medijan od 7) i `perf stat` brojače (instrukcije, ciklusi, IPC, cache-misses), te provjerava tačnost prema brute forceu. Novi rezultati idu u `rezultati/` (u korijenu, kao CSV, s podacima o računaru).
+
+Postojeći rezultati su podijeljeni po zadacima:
+
+- `1.KD-tree_mjerenja/`: KD-tree prema brute forceu i ubrzanje po broju niti (15. 11. 2026.)
+- `2.Testovi_i_velicine/`: testovi po planu testiranja i mjerenje po veličini pravougaonika (16. 11. 2026.)
+
+Svaki folder ima svoj izvještaj u `docs/` i svoje grafikone u `rezultati/grafikoni/`.
 
 ## Dokumentacija
 
@@ -46,12 +89,14 @@ Folder `docs/` sadrži naučno-istraživačke radove, linkove i ostale materijal
 
 - **`evaluacija/`**: radovi o poređenju prostornih indeksa i faktorima koji utiču na performanse.
   - *Evaluating Learned Spatial Indexes* (Pai et al., 2026): uticaj raspodjele podataka, selektivnosti upita i veličine blokova na performanse prostornih indeksa.
-
-- **`linkovi-implementacije.md`**: linkovi na korisne implementacije, dokumentaciju i primjere prostornih indeksa.
+  
+- **`plan-testiranja.md`**: plan testiranja prostornih upita (implementiran u `src/testovi.cpp`).
 
 Radovi obuhvataju i pristupe koji se razlikuju od naše implementacije. Koriste se kao literatura za razumijevanje indeksiranja, grupne obrade i optimizacije, a ne kao direktna implementacijska osnova za sve dijelove projekta.
 
 ## Inicijalni plan implementacije
+
+> Ovo je prvobitni plan. Stvarno stanje je u dijelu *Trenutno stanje* iznad: Uniform Grid je zamijenjen KD-stablom iz PSI biblioteke, a SIMD dio nije rađen.
 
 Implementacija je planirana u **C++20**, uz **CMake** za izgradnju projekta.
 
