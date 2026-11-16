@@ -36,3 +36,11 @@ target_compile_definitions(psi_seq PRIVATE P07_SERIAL PARLAY_SEQUENTIAL)
 # psi_omp: nasa OpenMP petlja; Parlay iskljucen da se dva rasporedjivaca ne mijesaju
 target_compile_definitions(psi_omp PRIVATE P07_OPENMP PARLAY_SEQUENTIAL)
 target_link_libraries(psi_omp PRIVATE OpenMP::OpenMP_CXX)
+
+# Testovi ispravnosti (docs/plan-testiranja.md): ./build/testovi ili ctest --test-dir build
+add_executable(testovi src/testovi.cpp)
+target_include_directories(testovi PRIVATE src)
+target_link_libraries(testovi PRIVATE PSI::PSI Threads::Threads OpenMP::OpenMP_CXX)
+target_compile_options(testovi PRIVATE -O2)
+enable_testing()
+add_test(NAME testovi COMMAND testovi)
