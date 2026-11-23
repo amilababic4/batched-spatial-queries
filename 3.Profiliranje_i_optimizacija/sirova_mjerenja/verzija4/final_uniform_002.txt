@@ -1,0 +1,4 @@
+N=200000 M=2000 w=0.020 dist=uniform seed=42 repeats=7 AVX2=da
+generisanje_soa_i_upita_ms=3.560
+v2 uzorci_ms=908.211,922.812,898.761,897.555,886.823,878.825,882.952, medijan_ms=897.555 pogodaka=158204 checksum=15841334427969
+v4 uzorci_ms=129.685,120.149,129.085,112.750,111.822,140.748,112.195, medijan_ms=120.149 pogodaka=158204 checksum=15841334427969

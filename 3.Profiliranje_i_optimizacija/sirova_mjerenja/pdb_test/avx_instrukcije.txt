@@ -1,0 +1,9 @@
+
+   1400077ad:	c5 fd 10 04 d0       	vmovupd (%rax,%rdx,8),%ymm0
+   1400077b2:	c5 fd 10 0c d1       	vmovupd (%rcx,%rdx,8),%ymm1
+   1400077b7:	c5 f5 c2 94 24 80 00 	vcmplepd 0x80(%rsp),%ymm1,%ymm2
+   1400077ca:	c5 e5 c2 c9 02       	vcmplepd %ymm1,%ymm3,%ymm1
+   1400077d3:	c5 fd c2 94 24 c0 00 	vcmplepd 0xc0(%rsp),%ymm0,%ymm2
+   1400077e6:	c5 e5 c2 c0 02       	vcmplepd %ymm0,%ymm3,%ymm0
+   1400077f3:	c5 fd 50 c0          	vmovmskpd %ymm0,%eax
+

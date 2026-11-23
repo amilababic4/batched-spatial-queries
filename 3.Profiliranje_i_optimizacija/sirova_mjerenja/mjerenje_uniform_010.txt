@@ -1,0 +1,6 @@
+PROVJERA: sve varijante vracaju identicne ID-jeve za svaki upit.
+dist=uniform N=200000 M=2000 w=0.100 seed=42 ponavljanja=7
+osnovna uzorci_ms=1451.988,1436.384,1422.015,1428.286,1433.313,1449.971,1432.360, medijan_ms=1433.313 kontrolni_zbir=381373883982618
+soa uzorci_ms=1287.328,1279.052,1279.783,1272.573,1287.460,1284.977,1278.051, medijan_ms=1279.783 kontrolni_zbir=381373883982618
+odmotano uzorci_ms=1255.451,1233.852,1228.693,1243.191,1225.473,1240.195,1220.547, medijan_ms=1233.852 kontrolni_zbir=381373883982618
+x_kandidati uzorci_ms=1432.017,1426.667,1430.965,1425.055,1433.336,1438.107,1413.300, medijan_ms=1430.965 kontrolni_zbir=381373883982618

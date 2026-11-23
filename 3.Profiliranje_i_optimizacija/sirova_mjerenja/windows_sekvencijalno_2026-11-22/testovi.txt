@@ -1,0 +1,27 @@
+Testovi prostornih upita (brute force + KD-tree serijski / Parlay / OpenMP)
+
+PROSAO  1. Mali pravougaonik oko jedne tacke                           (1 upita, 1 pogodaka)
+PROSAO  1. Mali pravougaonik izmedju tacaka (0 pogodaka)               (1 upita, 0 pogodaka)
+PROSAO  2. Srednji pravougaonik [0.25,0.75]^2 (5x5 tacaka)             (1 upita, 25 pogodaka)
+PROSAO  3. Veliki pravougaonik = cijeli prostor [0,1]^2                (1 upita, 100 pogodaka)
+PROSAO  3. Veliki pravougaonik veci od prostora [-5,5]^2               (1 upita, 100 pogodaka)
+PROSAO  4. Pravougaonik potpuno izvan tacaka                           (3 upita, 0 pogodaka)
+PROSAO  4. Prazan skup tacaka                                          (2 upita, 0 pogodaka)
+PROSAO  5. Ivice i uglovi ukljuceni: [0.2,0.5]^2 (4x4 tacaka)          (1 upita, 16 pogodaka)
+PROSAO  5. Tacke za jedan double izvan ivice nisu ukljucene            (1 upita, 8 pogodaka)
+PROSAO  6. Vodoravna duz (visina 0) kroz red y = 0.5                   (1 upita, 10 pogodaka)
+PROSAO  6. Uspravna duz (sirina 0) kroz kolonu x = 0.3                 (1 upita, 10 pogodaka)
+PROSAO  6. Uska izduzena traka [0,1] x [0.45,0.55]                     (1 upita, 10 pogodaka)
+PROSAO  6. Pravougaonik nulte povrsine = jedna tacka (0.7, 0.2)        (1 upita, 1 pogodaka)
+PROSAO  7. 50 tacaka s istim koordinatama: upit tacno u toj tacki      (1 upita, 50 pogodaka)
+PROSAO  7. 50 tacaka s istim koordinatama: sire okruzenje              (1 upita, 54 pogodaka)
+PROSAO  7. 50 tacaka s istim koordinatama: upit pored njih             (1 upita, 0 pogodaka)
+PROSAO  7. Svih 1000 tacaka na istoj poziciji                          (3 upita, 2000 pogodaka)
+PROSAO  Dodatno: negativne koordinate                                  (2 upita, 18 pogodaka)
+PROSAO  Dodatno: ispravan() odbija xmin > xmax, ymin > ymax i NaN     
+PROSAO  Dodatno: neispravne granice daju prazan rezultat               (3 upita, 0 pogodaka)
+PROSAO  Slucajno: 20.000 tacaka ravnomjerno, 400 upita                 (400 upita, 147087 pogodaka)
+PROSAO  Slucajno: 20.000 tacaka grupisano, 400 upita                   (400 upita, 143575 pogodaka)
+PROSAO  Slucajno: koordinate na mrezi 0.01 (mnogo ivica i duplikata)   (400 upita, 179384 pogodaka)
+
+Ukupno: 23 proslo, 0 palo

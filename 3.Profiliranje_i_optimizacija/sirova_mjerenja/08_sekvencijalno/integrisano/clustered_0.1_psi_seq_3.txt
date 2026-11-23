@@ -1,0 +1,16 @@
+==================== psi_seq (serijski) ====================
+Tacaka (N):                   200000
+Pravougaonika (M):            2000
+Sirina pravougaonika (w):     0.1
+Raspodjela tacaka:            clustered
+Broj niti:                    1
+Ukupno pronadjenih (K):       3783473
+Prosjecno po pravougaoniku:   1891.7
+Kontrolni zbir:               395036598527297
+
+-------------------- VRIJEME (medijan od 7) --------------------
+Izgradnja stabla:             21.39 ms
+Svi upiti:                    21.57 ms
+Ukupno (izgradnja + upiti):   42.96 ms
+Vrijeme po upitu:             10.78 us
+QPS (upita u sekundi):        92739

@@ -1,0 +1,11 @@
+mode=cold-optimized N=200000 M=2000 w=0.020000 dist=uniform seed=42 initial=64
+NAPOMENA: zaseban proces, jedan build i batch bez zagrijavanja; OS/CPU cache nije ociscen.
+generisanje_i_psi_konverzija_ms=5.163400
+priprema_kutija_i_validnosti_ms=0.021965
+kreiranje_stabla_i_kopija_ms=1.176274
+gradnja_stabla_ms=27.185761
+oslobadjanje_kopije_i_priprema_izlaza_buffera_ms=0.068650
+grupa_upita_ms=3.183729
+zidni_od_generisanja_do_kraja_grupe_ms=36.800403
+buffer uzorci_ms=3.183729, medijan_ms=3.183729 pogodaka=158204 checksum=15841334427969
+buffer_velicina_tacaka=128 buffer_logicki_bajtovi=3072 prosirenja=1 ponovnih_prolaza=1

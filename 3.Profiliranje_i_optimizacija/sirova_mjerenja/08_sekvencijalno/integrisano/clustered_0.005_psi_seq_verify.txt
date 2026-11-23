@@ -1,0 +1,21 @@
+==================== psi_seq (serijski) ====================
+Tacaka (N):                   200000
+Pravougaonika (M):            2000
+Sirina pravougaonika (w):     0.005
+Raspodjela tacaka:            clustered
+Broj niti:                    1
+Ukupno pronadjenih (K):       9300
+Prosjecno po pravougaoniku:   4.7
+Kontrolni zbir:               969031223530
+
+-------------------- VRIJEME (medijan od 1) --------------------
+Izgradnja stabla:             21.13 ms
+Svi upiti:                    0.55 ms
+Ukupno (izgradnja + upiti):   21.68 ms
+Vrijeme po upitu:             0.27 us
+QPS (upita u sekundi):        3654523
+
+-------------------- PROVJERA --------------------
+Brute force (1 prolaz, 1 nit): 840.56 ms
+Ubrzanje upita u odnosu na brute force: 1535.9x
+OK: svih 2000 upita daje iste id-jeve kao brute force.

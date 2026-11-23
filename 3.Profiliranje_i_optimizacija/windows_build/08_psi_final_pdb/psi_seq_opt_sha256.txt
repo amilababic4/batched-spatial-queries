@@ -1,0 +1,10 @@
+
+Algorithm : SHA256
+Hash      : 3EB9A8EE717EF62E6E589BBED56704805EBF3EBC57EBAB47FAA98C60879303F4
+Path      : C:\Users\DT User\Desktop\VI semestar\PRS\3.Profiliranje_i_optimizacija\windows_build\08_psi_final_pdb\psi_seq_opt_pdb.exe
+
+Algorithm : SHA256
+Hash      : BDE9A9FEE85C77B45D2679EAE4CA283F88EEC20BC99711A8BD7F8911D9F08AEE
+Path      : C:\Users\DT User\Desktop\VI semestar\PRS\3.Profiliranje_i_optimizacija\windows_build\08_psi_final_pdb\psi_seq_opt_pdb.pdb
+
+

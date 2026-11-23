@@ -1,0 +1,22 @@
+Datum: 2026-11-22
+Sistem: Windows; G++ MSYS2 UCRT64
+Kompajler:
+g++.exe (Rev5, Built by MSYS2 project) 16.1.0
+Copyright (C) 2026 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Opcije benchmarka: -std=c++20 -O3 -g -fno-omit-frame-pointer; KD: -DP07_SERIAL -DPARLAY_SEQUENTIAL -DP07_PROFILE_MARKERS. Testovi: -std=c++20 -O2 -g -fopenmp -pthread.
+Status: testovi i mjerenja bez profilera; VTune projektni rezultati jos nisu prikupljeni.
+SHA256 izvršnih datoteka:
+
+Algorithm Hash                                                             Path
+--------- ----                                                             ----
+SHA256    4153666D58AB1A42EB82413DF2DB92D574945EDDAD712DCF80D18734E15EC02A C:\Users\DT User\Desktop\VI semestar\PRS\3.Profiliranje_i_optimizacija\windows_build\brute_eksperimenti.exe
+SHA256    64B3DE610E41C85EDD11CC442072F93B28D2AB395AD5275311CF1C4F9EFE87E6 C:\Users\DT User\Desktop\VI semestar\PRS\3.Profiliranje_i_optimizacija\windows_build\brute_force_ViseUpita.exe
+SHA256    7BBA0EECCCCF589E18033FE93D15759CF0A37C2EEB54A301D40E38ACE8CFA845 C:\Users\DT User\Desktop\VI semestar\PRS\3.Profiliranje_i_optimizacija\windows_build\brute_force.exe
+SHA256    F84A7C8FB1DA5B2856071D49E54564E5B8041005C6C1DB4D53331C75302F67DC C:\Users\DT User\Desktop\VI semestar\PRS\3.Profiliranje_i_optimizacija\windows_build\psi_seq.exe
+SHA256    6FE4AAB4DB3D789E97AEECAFC40D25362C6637578084D4EF15659215F6280D8A C:\Users\DT User\Desktop\VI semestar\PRS\3.Profiliranje_i_optimizacija\windows_build\testovi.exe
+
+
+

@@ -1,0 +1,10 @@
+mode=cold-baseline N=200000 M=2000 w=0.100000 dist=clustered seed=42 initial=64
+NAPOMENA: zaseban proces, jedan build i batch bez zagrijavanja; OS/CPU cache nije ociscen.
+generisanje_i_psi_konverzija_ms=8.179128
+priprema_kutija_i_validnosti_ms=0.022551
+kreiranje_stabla_i_kopija_ms=1.194275
+gradnja_stabla_ms=25.679980
+oslobadjanje_kopije_i_priprema_izlaza_buffera_ms=0.072815
+grupa_upita_ms=24.605191
+zidni_od_generisanja_do_kraja_grupe_ms=59.754514
+original uzorci_ms=24.605191, medijan_ms=24.605191 pogodaka=3783473 checksum=395036598527297

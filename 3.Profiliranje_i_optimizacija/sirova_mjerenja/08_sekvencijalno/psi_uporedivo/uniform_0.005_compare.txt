@@ -1,0 +1,14 @@
+mode=compare N=200000 M=2000 w=0.005000 dist=uniform seed=42 repeats=7 build_repeats=7 initial=64
+generisanje_i_psi_konverzija_ms=5.305266
+priprema_kutija_i_validnosti_ms=0.023722
+inicijalni_scratch_ms=0.068969
+NAPOMENA: prvi upit i prva grupa nisu pravi cold-start niti uravnotezeno poredjenje.
+prvi_upit_original_ms=0.069193
+prvi_upit_buffer_ms=0.000599
+prva_grupa_original_ms=2.356771
+prva_grupa_buffer_ms=1.088946
+gradnja_stabla uzorci_ms=21.501004,29.500904,22.074107,21.060149,21.308068,21.602536,21.592001, medijan_ms=21.592001 pogodaka=0 checksum=0
+original uzorci_ms=2.567155,1.728109,1.824222,1.839154,1.937600,2.367785,1.827119, medijan_ms=1.839154 pogodaka=9888 checksum=985656979136
+buffer uzorci_ms=1.527693,1.103177,1.126851,1.027599,1.164520,1.385009,1.259350, medijan_ms=1.164520 pogodaka=9888 checksum=985656979136
+buffer_velicina_tacaka=64 buffer_logicki_bajtovi=1536 prosirenja=0 ponovnih_prolaza=0
+PROSAO: sve liste ID-jeva originala i buffera identicne su nakon sortiranja.

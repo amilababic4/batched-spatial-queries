@@ -1,0 +1,394 @@
+{
+  "psi": [
+    {
+      "tag": "uniform_0.005",
+      "label": "Uniformno / 0,005",
+      "n": 200000,
+      "m": 2000,
+      "psi_seq": {
+        "query_ms": 1.71,
+        "min_ms": 1.63,
+        "max_ms": 1.94,
+        "build_ms": 21.24,
+        "samples_ms": [
+          1.66,
+          1.71,
+          1.72,
+          1.94,
+          1.63
+        ]
+      },
+      "psi_seq_opt": {
+        "query_ms": 1.0,
+        "min_ms": 0.89,
+        "max_ms": 1.11,
+        "build_ms": 21.53,
+        "samples_ms": [
+          0.89,
+          0.99,
+          1.0,
+          1.01,
+          1.11
+        ]
+      },
+      "speedup": 1.71
+    },
+    {
+      "tag": "uniform_0.02",
+      "label": "Uniformno / 0,02",
+      "n": 200000,
+      "m": 2000,
+      "psi_seq": {
+        "query_ms": 4.41,
+        "min_ms": 4.37,
+        "max_ms": 4.63,
+        "build_ms": 21.11,
+        "samples_ms": [
+          4.63,
+          4.41,
+          4.37,
+          4.43,
+          4.41
+        ]
+      },
+      "psi_seq_opt": {
+        "query_ms": 2.68,
+        "min_ms": 2.66,
+        "max_ms": 2.95,
+        "build_ms": 21.19,
+        "samples_ms": [
+          2.95,
+          2.73,
+          2.66,
+          2.66,
+          2.68
+        ]
+      },
+      "speedup": 1.6455223880597014
+    },
+    {
+      "tag": "uniform_0.1",
+      "label": "Uniformno / 0,1",
+      "n": 200000,
+      "m": 2000,
+      "psi_seq": {
+        "query_ms": 27.05,
+        "min_ms": 26.19,
+        "max_ms": 27.77,
+        "build_ms": 21.18,
+        "samples_ms": [
+          26.72,
+          27.05,
+          26.19,
+          27.77,
+          27.65
+        ]
+      },
+      "psi_seq_opt": {
+        "query_ms": 18.81,
+        "min_ms": 18.27,
+        "max_ms": 20.17,
+        "build_ms": 21.38,
+        "samples_ms": [
+          18.88,
+          18.55,
+          18.27,
+          20.17,
+          18.81
+        ]
+      },
+      "speedup": 1.438064859117491
+    },
+    {
+      "tag": "clustered_0.005",
+      "label": "Grupisano / 0,005",
+      "n": 200000,
+      "m": 2000,
+      "psi_seq": {
+        "query_ms": 0.61,
+        "min_ms": 0.55,
+        "max_ms": 0.62,
+        "build_ms": 21.35,
+        "samples_ms": [
+          0.61,
+          0.62,
+          0.62,
+          0.57,
+          0.55
+        ]
+      },
+      "psi_seq_opt": {
+        "query_ms": 0.37,
+        "min_ms": 0.36,
+        "max_ms": 0.38,
+        "build_ms": 21.46,
+        "samples_ms": [
+          0.37,
+          0.37,
+          0.38,
+          0.37,
+          0.36
+        ]
+      },
+      "speedup": 1.6486486486486487
+    },
+    {
+      "tag": "clustered_0.02",
+      "label": "Grupisano / 0,02",
+      "n": 200000,
+      "m": 2000,
+      "psi_seq": {
+        "query_ms": 2.02,
+        "min_ms": 1.88,
+        "max_ms": 2.42,
+        "build_ms": 21.6,
+        "samples_ms": [
+          2.01,
+          2.42,
+          2.02,
+          2.22,
+          1.88
+        ]
+      },
+      "psi_seq_opt": {
+        "query_ms": 1.23,
+        "min_ms": 1.18,
+        "max_ms": 1.51,
+        "build_ms": 21.53,
+        "samples_ms": [
+          1.51,
+          1.23,
+          1.22,
+          1.27,
+          1.18
+        ]
+      },
+      "speedup": 1.6422764227642277
+    },
+    {
+      "tag": "clustered_0.1",
+      "label": "Grupisano / 0,1",
+      "n": 200000,
+      "m": 2000,
+      "psi_seq": {
+        "query_ms": 21.05,
+        "min_ms": 19.63,
+        "max_ms": 21.57,
+        "build_ms": 21.39,
+        "samples_ms": [
+          19.81,
+          19.63,
+          21.57,
+          21.41,
+          21.05
+        ]
+      },
+      "psi_seq_opt": {
+        "query_ms": 14.48,
+        "min_ms": 14.14,
+        "max_ms": 15.43,
+        "build_ms": 21.47,
+        "samples_ms": [
+          14.48,
+          14.76,
+          14.14,
+          14.21,
+          15.43
+        ]
+      },
+      "speedup": 1.453729281767956
+    },
+    {
+      "tag": "malo",
+      "label": "Mali / 0,02",
+      "n": 20000,
+      "m": 200,
+      "psi_seq": {
+        "query_ms": 0.12,
+        "min_ms": 0.12,
+        "max_ms": 0.14,
+        "build_ms": 1.34,
+        "samples_ms": [
+          0.14,
+          0.12,
+          0.12,
+          0.12,
+          0.12
+        ]
+      },
+      "psi_seq_opt": {
+        "query_ms": 0.07,
+        "min_ms": 0.05,
+        "max_ms": 0.07,
+        "build_ms": 1.31,
+        "samples_ms": [
+          0.07,
+          0.07,
+          0.05,
+          0.07,
+          0.06
+        ]
+      },
+      "speedup": 1.714285714285714
+    },
+    {
+      "tag": "veliko",
+      "label": "Veliki / 0,02",
+      "n": 1000000,
+      "m": 2000,
+      "psi_seq": {
+        "query_ms": 13.72,
+        "min_ms": 13.14,
+        "max_ms": 15.29,
+        "build_ms": 88.16,
+        "samples_ms": [
+          13.72,
+          13.14,
+          13.92,
+          13.15,
+          15.29
+        ]
+      },
+      "psi_seq_opt": {
+        "query_ms": 10.06,
+        "min_ms": 9.33,
+        "max_ms": 10.17,
+        "build_ms": 88.11,
+        "samples_ms": [
+          9.56,
+          10.1,
+          9.33,
+          10.17,
+          10.06
+        ]
+      },
+      "speedup": 1.363817097415507
+    }
+  ],
+  "brute_v4_v5": [
+    {
+      "tag": "uniform_0.005",
+      "label": "Uniformno / 0,005",
+      "v4_ms": 120.266,
+      "v5_ms": 87.304
+    },
+    {
+      "tag": "uniform_0.02",
+      "label": "Uniformno / 0,02",
+      "v4_ms": 117.725,
+      "v5_ms": 144.492
+    },
+    {
+      "tag": "uniform_0.1",
+      "label": "Uniformno / 0,1",
+      "v4_ms": 168.899,
+      "v5_ms": 478.044
+    },
+    {
+      "tag": "clustered_0.005",
+      "label": "Grupisano / 0,005",
+      "v4_ms": 124.667,
+      "v5_ms": 84.048
+    },
+    {
+      "tag": "clustered_0.02",
+      "label": "Grupisano / 0,02",
+      "v4_ms": 117.064,
+      "v5_ms": 135.459
+    },
+    {
+      "tag": "clustered_0.1",
+      "label": "Grupisano / 0,1",
+      "v4_ms": 163.922,
+      "v5_ms": 353.639
+    },
+    {
+      "tag": "malo",
+      "label": "Mali / 0,02",
+      "v4_ms": 1.119,
+      "v5_ms": 1.389
+    },
+    {
+      "tag": "veliko",
+      "label": "Veliki / 0,02",
+      "v4_ms": 1182.0,
+      "v5_ms": 1373.577
+    }
+  ],
+  "cold_experiment": {
+    "baseline": 37.574715,
+    "optimized": 36.800403
+  },
+  "memory": [
+    {
+      "width": "0.02",
+      "psi_seq": {
+        "heap_plus_overhead_bytes": 52163160,
+        "rss_kib": 39808.0,
+        "rss_samples_kib": [
+          39936.0,
+          39808.0,
+          39808.0
+        ]
+      },
+      "psi_seq_opt": {
+        "heap_plus_overhead_bytes": 52165200,
+        "rss_kib": 39936.0,
+        "rss_samples_kib": [
+          39936.0,
+          39936.0,
+          39680.0
+        ]
+      }
+    },
+    {
+      "width": "0.1",
+      "psi_seq": {
+        "heap_plus_overhead_bytes": 66500664,
+        "rss_kib": 53888.0,
+        "rss_samples_kib": [
+          53888.0,
+          53888.0,
+          53888.0
+        ]
+      },
+      "psi_seq_opt": {
+        "heap_plus_overhead_bytes": 67289472,
+        "rss_kib": 54400.0,
+        "rss_samples_kib": [
+          54400.0,
+          54400.0,
+          54272.0
+        ]
+      }
+    }
+  ],
+  "vtune": {
+    "baseline": {
+      "Elapsed Time": 1.886721,
+      "Instructions Retired": 9420488000.0,
+      "CPI Rate": 0.908814,
+      "MUX Reliability": 0.99142,
+      "Retiring": 24.8,
+      "Front-End Bound": 19.0,
+      "Bad Speculation": 12.6,
+      "Back-End Bound": 43.7,
+      "Memory Bound": 24.6
+    },
+    "optimized": {
+      "Elapsed Time": 1.456197,
+      "Instructions Retired": 6689382000.0,
+      "CPI Rate": 0.939891,
+      "MUX Reliability": 0.992624,
+      "Retiring": 23.6,
+      "Front-End Bound": 16.7,
+      "Bad Speculation": 21.5,
+      "Back-End Bound": 38.2,
+      "Memory Bound": 15.7
+    }
+  },
+  "source_sha256": {
+    "psi_benchmark.cpp": "0f91d4c625e5547880fdf453fc4b02252c754cf4f76147995f5161abb2224793",
+    "psi_seq_buffer.h": "476675e821c6cf00461249a742356efeec21421799e6d5e60cc9038d3c8e684c"
+  }
+}

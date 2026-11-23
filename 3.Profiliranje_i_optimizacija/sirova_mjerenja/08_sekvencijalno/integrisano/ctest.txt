@@ -1,0 +1,114 @@
+Internal ctest changing into directory: /home/dt_user/prs-integration-check
+UpdateCTestConfiguration  from :/home/dt_user/prs-integration-check/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/home/dt_user/prs-integration-check/DartConfiguration.tcl
+Test project /home/dt_user/prs-integration-check
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: testovi
+
+1: Test command: /home/dt_user/prs-integration-check/testovi
+1: Working Directory: /home/dt_user/prs-integration-check
+1: Test timeout computed to be: 10000000
+1: Testovi prostornih upita (brute force + KD-tree serijski / Parlay / OpenMP)
+1: 
+1: PROSAO  1. Mali pravougaonik oko jedne tacke                           (1 upita, 1 pogodaka)
+1: PROSAO  1. Mali pravougaonik izmedju tacaka (0 pogodaka)               (1 upita, 0 pogodaka)
+1: PROSAO  2. Srednji pravougaonik [0.25,0.75]^2 (5x5 tacaka)             (1 upita, 25 pogodaka)
+1: PROSAO  3. Veliki pravougaonik = cijeli prostor [0,1]^2                (1 upita, 100 pogodaka)
+1: PROSAO  3. Veliki pravougaonik veci od prostora [-5,5]^2               (1 upita, 100 pogodaka)
+1: PROSAO  4. Pravougaonik potpuno izvan tacaka                           (3 upita, 0 pogodaka)
+1: PROSAO  4. Prazan skup tacaka                                          (2 upita, 0 pogodaka)
+1: PROSAO  5. Ivice i uglovi ukljuceni: [0.2,0.5]^2 (4x4 tacaka)          (1 upita, 16 pogodaka)
+1: PROSAO  5. Tacke za jedan double izvan ivice nisu ukljucene            (1 upita, 8 pogodaka)
+1: PROSAO  6. Vodoravna duz (visina 0) kroz red y = 0.5                   (1 upita, 10 pogodaka)
+1: PROSAO  6. Uspravna duz (sirina 0) kroz kolonu x = 0.3                 (1 upita, 10 pogodaka)
+1: PROSAO  6. Uska izduzena traka [0,1] x [0.45,0.55]                     (1 upita, 10 pogodaka)
+1: PROSAO  6. Pravougaonik nulte povrsine = jedna tacka (0.7, 0.2)        (1 upita, 1 pogodaka)
+1: PROSAO  7. 50 tacaka s istim koordinatama: upit tacno u toj tacki      (1 upita, 50 pogodaka)
+1: PROSAO  7. 50 tacaka s istim koordinatama: sire okruzenje              (1 upita, 54 pogodaka)
+1: PROSAO  7. 50 tacaka s istim koordinatama: upit pored njih             (1 upita, 0 pogodaka)
+1: PROSAO  7. Svih 1000 tacaka na istoj poziciji                          (3 upita, 2000 pogodaka)
+1: PROSAO  Dodatno: negativne koordinate                                  (2 upita, 18 pogodaka)
+1: PROSAO  Dodatno: ispravan() odbija xmin > xmax, ymin > ymax i NaN     
+1: PROSAO  Dodatno: neispravne granice daju prazan rezultat               (3 upita, 0 pogodaka)
+1: PROSAO  Slucajno: 20.000 tacaka ravnomjerno, 400 upita                 (400 upita, 147087 pogodaka)
+1: PROSAO  Slucajno: 20.000 tacaka grupisano, 400 upita                   (400 upita, 143575 pogodaka)
+1: PROSAO  Slucajno: koordinate na mrezi 0.01 (mnogo ivica i duplikata)   (400 upita, 179384 pogodaka)
+1: 
+1: Ukupno: 23 proslo, 0 palo
+1/4 Test #1: testovi ..........................   Passed    0.18 sec
+test 2
+    Start 2: psi_seq_opt_helper
+
+2: Test command: /home/dt_user/prs-integration-check/testovi_psi_seq_opt
+2: Working Directory: /home/dt_user/prs-integration-check
+2: Test timeout computed to be: 10000000
+2: PSI buffer helper: svi rubni testovi su prosli.
+2/4 Test #2: psi_seq_opt_helper ...............   Passed    0.00 sec
+test 3
+    Start 3: psi_seq_opt_cli
+
+3: Test command: /usr/bin/cmake "-DPROGRAM=/home/dt_user/prs-integration-check/psi_seq_opt" "-DN=1000" "-DM=30" "-P" "/mnt/c/Users/DT User/Desktop/VI semestar/PRS/src/test_psi_seq_cli.cmake"
+3: Working Directory: /home/dt_user/prs-integration-check
+3: Test timeout computed to be: 10000000
+3: ==================== psi_seq_opt (serijski, ponovna upotreba bafera) ====================
+3: Tacaka (N):                   1000
+3: Pravougaonika (M):            30
+3: Sirina pravougaonika (w):     0.1
+3: Raspodjela tacaka:            uniform
+3: Broj niti:                    1
+3: Ukupno pronadjenih (K):       265
+3: Prosjecno po pravougaoniku:   8.8
+3: Kontrolni zbir:               1989566
+3: 
+3: -------------------- VRIJEME (medijan od 1) --------------------
+3: Izgradnja stabla:             0.04 ms
+3: Svi upiti:                    0.01 ms
+3: Ukupno (izgradnja + upiti):   0.05 ms
+3: Vrijeme po upitu:             0.31 us
+3: QPS (upita u sekundi):        3183699
+3: 
+3: -------------------- PROVJERA --------------------
+3: Brute force (1 prolaz, 1 nit): 0.09 ms
+3: Ubrzanje upita u odnosu na brute force: 9.1x
+3: OK: svih 30 upita daje iste id-jeve kao brute force.
+3: 
+3/4 Test #3: psi_seq_opt_cli ..................   Passed    0.02 sec
+test 4
+    Start 4: psi_seq_opt_prazno_cli
+
+4: Test command: /usr/bin/cmake "-DPROGRAM=/home/dt_user/prs-integration-check/psi_seq_opt" "-DN=0" "-DM=0" "-P" "/mnt/c/Users/DT User/Desktop/VI semestar/PRS/src/test_psi_seq_cli.cmake"
+4: Working Directory: /home/dt_user/prs-integration-check
+4: Test timeout computed to be: 10000000
+4: ==================== psi_seq_opt (serijski, ponovna upotreba bafera) ====================
+4: Tacaka (N):                   0
+4: Pravougaonika (M):            0
+4: Sirina pravougaonika (w):     0.1
+4: Raspodjela tacaka:            uniform
+4: Broj niti:                    1
+4: Ukupno pronadjenih (K):       0
+4: Prosjecno po pravougaoniku:   0.0
+4: Kontrolni zbir:               0
+4: 
+4: -------------------- VRIJEME (medijan od 1) --------------------
+4: Izgradnja stabla:             0.00 ms
+4: Svi upiti:                    0.00 ms
+4: Ukupno (izgradnja + upiti):   0.00 ms
+4: Vrijeme po upitu:             0.00 us
+4: QPS (upita u sekundi):        0
+4: 
+4: -------------------- PROVJERA --------------------
+4: Brute force (1 prolaz, 1 nit): 0.00 ms
+4: Ubrzanje upita u odnosu na brute force: 0.4x
+4: OK: svih 0 upita daje iste id-jeve kao brute force.
+4: 
+4/4 Test #4: psi_seq_opt_prazno_cli ...........   Passed    0.02 sec
+
+100% tests passed, 0 tests failed out of 4
+
+Total Test time (real) =   0.24 sec

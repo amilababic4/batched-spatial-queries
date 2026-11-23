@@ -1,0 +1,9 @@
+# Skripte moraju ostati izvršive u Linux/WSL okruženju nakon kloniranja na Windowsu.
+*.sh text eol=lf
+*.pdf binary
+*.png binary
+
+# Izvorne VTune i mjerne datoteke čuvaju se byte-po-byte kao dokaz mjerenja.
+3.Profiliranje_i_optimizacija/sirova_mjerenja/** -text -diff
+3.Profiliranje_i_optimizacija/prs-moje-mjerenje-Windows/** -text -diff
+3.Profiliranje_i_optimizacija/windows_build/** -text -diff

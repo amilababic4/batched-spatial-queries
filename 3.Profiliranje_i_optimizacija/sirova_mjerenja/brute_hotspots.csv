@@ -1,0 +1,4 @@
+Function	CPU Time	CPU Time:Effective Time	CPU Time:Spin Time	CPU Time:Overhead Time	Module	Function (Full)	Source File	Start Address
+unutra	2.371921	2.371921	0.0	0.0	brute_force_ViseUpita	unutra	brute_force_ViseUpita.cpp	0x1a2d
+main	2.140082	2.140082	0.0	0.0	brute_force_ViseUpita	main	brute_force_ViseUpita.cpp	0x1200
+std::vector<int, std::allocator<int>>::push_back	0.007986	0.007986	0.0	0.0	brute_force_ViseUpita	std::vector<int, std::allocator<int>>::push_back(int const&)	stl_vector.h	0x1200

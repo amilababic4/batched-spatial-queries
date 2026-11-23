@@ -1,0 +1,1 @@
+PROSAO: 256 parova maski, rubovi i svi ID-jevi; AVX2=ne (skalarni put)

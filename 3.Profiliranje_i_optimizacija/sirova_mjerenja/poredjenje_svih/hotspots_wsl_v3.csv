@@ -1,0 +1,6 @@
+Function,CPU Time,CPU Time:Effective Time,CPU Time:Spin Time,CPU Time:Overhead Time,Module,Function (Full),Source File,Start Address
+verzija3,6.708347,6.708347,0.0,0.0,poredjenje,verzija3,05_poredjenje_svih.cpp,0x1358
+"std::vector<double, std::allocator<double>>::size",1.910766,1.910766,0.0,0.0,poredjenje,"std::vector<double, std::allocator<double>>::size(void) const",stl_vector.h,0x5d16
+"std::vector<unsigned long, std::allocator<unsigned long>>::push_back",0.254394,0.254394,0.0,0.0,poredjenje,"std::vector<unsigned long, std::allocator<unsigned long>>::push_back(unsigned long const&)",stl_vector.h,0x1358
+"std::vector<int, std::allocator<int>>::push_back",0.097655,0.097655,0.0,0.0,poredjenje,"std::vector<int, std::allocator<int>>::push_back(int const&)",stl_vector.h,0x1358
+"std::vector<int, std::allocator<int>>::operator[]",0.008475,0.008475,0.0,0.0,poredjenje,"std::vector<int, std::allocator<int>>::operator[](unsigned long) const",stl_vector.h,0x5da2

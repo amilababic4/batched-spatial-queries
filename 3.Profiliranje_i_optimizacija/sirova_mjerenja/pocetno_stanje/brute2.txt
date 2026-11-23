@@ -1,0 +1,39 @@
+Pravougaonik 0: x od 0.0557 do 0.0757, y od 0.5341 do 0.5541 -> 82 tacaka
+     tacka id=  3593  (0.0661, 0.5407)
+     tacka id=  5378  (0.0583, 0.5421)
+     tacka id=  6553  (0.0661, 0.5449)
+     tacka id=  7287  (0.0687, 0.5439)
+     tacka id= 12297  (0.0701, 0.5402)
+     ... i jos 77
+
+Pravougaonik 1: x od 0.9198 do 0.9398, y od 0.1316 do 0.1516 -> 87 tacaka
+     tacka id=   173  (0.9234, 0.1338)
+     tacka id=  4884  (0.9264, 0.1350)
+     tacka id=  4945  (0.9290, 0.1419)
+     tacka id=  5237  (0.9295, 0.1459)
+     tacka id=  5432  (0.9332, 0.1502)
+     ... i jos 82
+
+Pravougaonik 2: x od 0.0783 do 0.0983, y od 0.7319 do 0.7519 -> 71 tacaka
+     tacka id=   491  (0.0869, 0.7362)
+     tacka id=  4593  (0.0829, 0.7450)
+     tacka id=  6563  (0.0866, 0.7499)
+     tacka id=  7974  (0.0886, 0.7508)
+     tacka id= 18503  (0.0803, 0.7487)
+     ... i jos 66
+
+==================== SAZETAK ====================
+Tacaka u prostoru (N):        200000
+Pravougaonika (M):            2000
+Raspodjela tacaka:            uniform
+Ukupno pronadjenih (K):       158204
+Prosjecno po pravougaoniku:   79.1
+Kontrolni zbir:               15841334427969
+Broj provjera (N*M):          400000000
+
+==================== VRIJEME ====================
+Broj mjerenja:                5
+Najbolje vrijeme (min):       904.52 ms
+Medijan vremena:              914.29 ms
+Vrijeme po pravougaoniku:     457.14 us
+Provjera u sekundi:           437 miliona

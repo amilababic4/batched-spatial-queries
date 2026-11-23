@@ -1,0 +1,7 @@
+vtune: Error:  Cannot enable Hardware Event-Based Sampling or Hardware Tracing. Please check the following:
+        
+           * Check that the Sampling Driver is loaded (see the Install the Sampling Drivers for Windows Targets help topic for details).
+
+           * Run the product as administrator to collect hardware events.
+
+        

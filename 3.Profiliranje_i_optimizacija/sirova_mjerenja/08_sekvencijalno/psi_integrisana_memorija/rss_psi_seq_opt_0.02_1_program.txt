@@ -1,0 +1,16 @@
+==================== psi_seq_opt (serijski, ponovna upotreba bafera) ====================
+Tacaka (N):                   200000
+Pravougaonika (M):            2000
+Sirina pravougaonika (w):     0.02
+Raspodjela tacaka:            uniform
+Broj niti:                    1
+Ukupno pronadjenih (K):       158204
+Prosjecno po pravougaoniku:   79.1
+Kontrolni zbir:               15841334427969
+
+-------------------- VRIJEME (medijan od 1) --------------------
+Izgradnja stabla:             20.90 ms
+Svi upiti:                    2.56 ms
+Ukupno (izgradnja + upiti):   23.46 ms
+Vrijeme po upitu:             1.28 us
+QPS (upita u sekundi):        781640

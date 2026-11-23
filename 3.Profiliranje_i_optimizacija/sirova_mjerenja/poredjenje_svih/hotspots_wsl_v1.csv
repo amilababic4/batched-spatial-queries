@@ -1,0 +1,5 @@
+Function,CPU Time,CPU Time:Effective Time,CPU Time:Spin Time,CPU Time:Overhead Time,Module,Function (Full),Source File,Start Address
+p07::unutra,5.981387,5.981387,0.0,0.0,poredjenje,"p07::unutra(double, double, p07::Rect const&)",podaci.h,0x63d5
+verzija1,2.012075,2.012075,0.0,0.0,poredjenje,verzija1,05_poredjenje_svih.cpp,0x13ab
+"std::vector<double, std::allocator<double>>::size",1.561657,1.561657,0.0,0.0,poredjenje,"std::vector<double, std::allocator<double>>::size(void) const",stl_vector.h,0x637d
+"std::vector<int, std::allocator<int>>::push_back",0.114254,0.114254,0.0,0.0,poredjenje,"std::vector<int, std::allocator<int>>::push_back(int const&)",stl_vector.h,0x13ab

@@ -1,0 +1,1002 @@
+{
+  "scenarios": {
+    "uniform_0.005": {
+      "N": 200000,
+      "M": 2000,
+      "w": 0.005,
+      "dist": "uniform",
+      "seed": 42,
+      "repeats": 7,
+      "AVX2": "da",
+      "source": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\poredjenje_svih\\uniform_0.005_compare.txt",
+      "variants": {
+        "ref": {
+          "samples_ms": [
+            981.444,
+            980.882,
+            981.552,
+            993.823,
+            999.805,
+            1054.983,
+            979.696
+          ],
+          "median_ms": 981.552,
+          "min_ms": 979.696,
+          "max_ms": 1054.983,
+          "hits": 9888,
+          "checksum": 985656979136,
+          "speedup": 1.0,
+          "queries_per_second": 2037.5894501768628
+        },
+        "v1": {
+          "samples_ms": [
+            886.893,
+            879.435,
+            888.466,
+            880.96,
+            870.512,
+            915.652,
+            845.27
+          ],
+          "median_ms": 880.96,
+          "min_ms": 845.27,
+          "max_ms": 915.652,
+          "hits": 9888,
+          "checksum": 985656979136,
+          "speedup": 1.1141845259716672,
+          "queries_per_second": 2270.250635670178
+        },
+        "v2": {
+          "samples_ms": [
+            815.988,
+            813.789,
+            802.993,
+            804.228,
+            826.678,
+            814.136,
+            833.585
+          ],
+          "median_ms": 814.136,
+          "min_ms": 802.993,
+          "max_ms": 833.585,
+          "hits": 9888,
+          "checksum": 985656979136,
+          "speedup": 1.2056364047284485,
+          "queries_per_second": 2456.5920190238485
+        },
+        "v3": {
+          "samples_ms": [
+            872.545,
+            866.183,
+            871.686,
+            932.867,
+            899.565,
+            847.634,
+            848.916
+          ],
+          "median_ms": 871.686,
+          "min_ms": 847.634,
+          "max_ms": 932.867,
+          "hits": 9888,
+          "checksum": 985656979136,
+          "speedup": 1.1260385046909094,
+          "queries_per_second": 2294.4041776511267
+        },
+        "v4": {
+          "samples_ms": [
+            110.036,
+            119.385,
+            118.535,
+            116.678,
+            128.383,
+            131.555,
+            105.812
+          ],
+          "median_ms": 118.535,
+          "min_ms": 105.812,
+          "max_ms": 131.555,
+          "hits": 9888,
+          "checksum": 985656979136,
+          "speedup": 8.280693466064875,
+          "queries_per_second": 16872.65364660227
+        }
+      }
+    },
+    "uniform_0.02": {
+      "N": 200000,
+      "M": 2000,
+      "w": 0.02,
+      "dist": "uniform",
+      "seed": 42,
+      "repeats": 7,
+      "AVX2": "da",
+      "source": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\poredjenje_svih\\uniform_0.02_compare.txt",
+      "variants": {
+        "ref": {
+          "samples_ms": [
+            1106.754,
+            1084.577,
+            1105.159,
+            1104.383,
+            1056.439,
+            1062.408,
+            1052.312
+          ],
+          "median_ms": 1084.577,
+          "min_ms": 1052.312,
+          "max_ms": 1106.754,
+          "hits": 158204,
+          "checksum": 15841334427969,
+          "speedup": 1.0,
+          "queries_per_second": 1844.0368918020574
+        },
+        "v1": {
+          "samples_ms": [
+            964.955,
+            946.109,
+            946.819,
+            1008.584,
+            1039.599,
+            1035.028,
+            964.371
+          ],
+          "median_ms": 964.955,
+          "min_ms": 946.109,
+          "max_ms": 1039.599,
+          "hits": 158204,
+          "checksum": 15841334427969,
+          "speedup": 1.1239664025783584,
+          "queries_per_second": 2072.6355115005363
+        },
+        "v2": {
+          "samples_ms": [
+            962.51,
+            872.255,
+            892.858,
+            876.447,
+            941.464,
+            907.801,
+            926.65
+          ],
+          "median_ms": 907.801,
+          "min_ms": 872.255,
+          "max_ms": 962.51,
+          "hits": 158204,
+          "checksum": 15841334427969,
+          "speedup": 1.1947299022583142,
+          "queries_per_second": 2203.126015503398
+        },
+        "v3": {
+          "samples_ms": [
+            920.074,
+            927.347,
+            1008.356,
+            959.316,
+            937.486,
+            952.775,
+            1006.833
+          ],
+          "median_ms": 952.775,
+          "min_ms": 920.074,
+          "max_ms": 1008.356,
+          "hits": 158204,
+          "checksum": 15841334427969,
+          "speedup": 1.1383348639500408,
+          "queries_per_second": 2099.131484348351
+        },
+        "v4": {
+          "samples_ms": [
+            121.614,
+            108.745,
+            119.956,
+            137.906,
+            121.141,
+            112.642,
+            121.889
+          ],
+          "median_ms": 121.141,
+          "min_ms": 108.745,
+          "max_ms": 137.906,
+          "hits": 158204,
+          "checksum": 15841334427969,
+          "speedup": 8.953013430630422,
+          "queries_per_second": 16509.6870588818
+        }
+      }
+    },
+    "uniform_0.1": {
+      "N": 200000,
+      "M": 2000,
+      "w": 0.1,
+      "dist": "uniform",
+      "seed": 42,
+      "repeats": 7,
+      "AVX2": "da",
+      "source": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\poredjenje_svih\\uniform_0.1_compare.txt",
+      "variants": {
+        "ref": {
+          "samples_ms": [
+            1321.745,
+            1281.365,
+            1313.683,
+            1308.259,
+            1412.129,
+            1271.982,
+            1282.644
+          ],
+          "median_ms": 1308.259,
+          "min_ms": 1271.982,
+          "max_ms": 1412.129,
+          "hits": 3808227,
+          "checksum": 381373883982618,
+          "speedup": 1.0,
+          "queries_per_second": 1528.7492767104984
+        },
+        "v1": {
+          "samples_ms": [
+            1187.843,
+            1200.937,
+            1216.406,
+            1221.136,
+            1212.74,
+            1172.938,
+            1200.621
+          ],
+          "median_ms": 1200.937,
+          "min_ms": 1172.938,
+          "max_ms": 1221.136,
+          "hits": 3808227,
+          "checksum": 381373883982618,
+          "speedup": 1.0893652206568705,
+          "queries_per_second": 1665.3662931527633
+        },
+        "v2": {
+          "samples_ms": [
+            1188.138,
+            1153.264,
+            1182.18,
+            1194.4,
+            1160.362,
+            1119.883,
+            1177.646
+          ],
+          "median_ms": 1177.646,
+          "min_ms": 1119.883,
+          "max_ms": 1194.4,
+          "hits": 3808227,
+          "checksum": 381373883982618,
+          "speedup": 1.110910239579636,
+          "queries_per_second": 1698.303225247655
+        },
+        "v3": {
+          "samples_ms": [
+            1218.938,
+            1189.229,
+            1224.247,
+            1203.819,
+            1185.008,
+            1186.76,
+            1176.992
+          ],
+          "median_ms": 1189.229,
+          "min_ms": 1176.992,
+          "max_ms": 1224.247,
+          "hits": 3808227,
+          "checksum": 381373883982618,
+          "speedup": 1.1000900583487285,
+          "queries_per_second": 1681.7618810170286
+        },
+        "v4": {
+          "samples_ms": [
+            172.477,
+            174.141,
+            155.229,
+            183.853,
+            179.031,
+            149.143,
+            163.551
+          ],
+          "median_ms": 172.477,
+          "min_ms": 149.143,
+          "max_ms": 183.853,
+          "hits": 3808227,
+          "checksum": 381373883982618,
+          "speedup": 7.585121494460131,
+          "queries_per_second": 11595.74899841718
+        }
+      }
+    },
+    "clustered_0.005": {
+      "N": 200000,
+      "M": 2000,
+      "w": 0.005,
+      "dist": "clustered",
+      "seed": 42,
+      "repeats": 7,
+      "AVX2": "da",
+      "source": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\poredjenje_svih\\clustered_0.005_compare.txt",
+      "variants": {
+        "ref": {
+          "samples_ms": [
+            923.754,
+            905.857,
+            914.48,
+            926.766,
+            925.157,
+            912.554,
+            911.404
+          ],
+          "median_ms": 914.48,
+          "min_ms": 905.857,
+          "max_ms": 926.766,
+          "hits": 9300,
+          "checksum": 969031223530,
+          "speedup": 1.0,
+          "queries_per_second": 2187.0352550083107
+        },
+        "v1": {
+          "samples_ms": [
+            829.363,
+            823.883,
+            829.825,
+            813.942,
+            843.584,
+            827.027,
+            805.811
+          ],
+          "median_ms": 827.027,
+          "min_ms": 805.811,
+          "max_ms": 843.584,
+          "hits": 9300,
+          "checksum": 969031223530,
+          "speedup": 1.1057438269850923,
+          "queries_per_second": 2418.300732624207
+        },
+        "v2": {
+          "samples_ms": [
+            729.326,
+            756.947,
+            769.019,
+            738.187,
+            758.104,
+            759.427,
+            749.727
+          ],
+          "median_ms": 756.947,
+          "min_ms": 729.326,
+          "max_ms": 769.019,
+          "hits": 9300,
+          "checksum": 969031223530,
+          "speedup": 1.20811628819455,
+          "queries_per_second": 2642.192914431261
+        },
+        "v3": {
+          "samples_ms": [
+            779.379,
+            790.525,
+            798.118,
+            791.937,
+            792.701,
+            796.148,
+            811.272
+          ],
+          "median_ms": 792.701,
+          "min_ms": 779.379,
+          "max_ms": 811.272,
+          "hits": 9300,
+          "checksum": 969031223530,
+          "speedup": 1.1536253896488082,
+          "queries_per_second": 2523.019398234643
+        },
+        "v4": {
+          "samples_ms": [
+            124.693,
+            126.035,
+            109.691,
+            123.118,
+            129.048,
+            123.4,
+            119.565
+          ],
+          "median_ms": 123.4,
+          "min_ms": 109.691,
+          "max_ms": 129.048,
+          "hits": 9300,
+          "checksum": 969031223530,
+          "speedup": 7.410696920583468,
+          "queries_per_second": 16207.455429497568
+        }
+      }
+    },
+    "clustered_0.02": {
+      "N": 200000,
+      "M": 2000,
+      "w": 0.02,
+      "dist": "clustered",
+      "seed": 42,
+      "repeats": 7,
+      "AVX2": "da",
+      "source": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\poredjenje_svih\\clustered_0.02_compare.txt",
+      "variants": {
+        "ref": {
+          "samples_ms": [
+            942.022,
+            977.159,
+            1006.835,
+            1000.142,
+            1018.402,
+            990.037,
+            997.855
+          ],
+          "median_ms": 997.855,
+          "min_ms": 942.022,
+          "max_ms": 1018.402,
+          "hits": 150034,
+          "checksum": 15809898807250,
+          "speedup": 1.0,
+          "queries_per_second": 2004.299221830827
+        },
+        "v1": {
+          "samples_ms": [
+            862.576,
+            849.525,
+            894.029,
+            907.701,
+            893.4,
+            897.509,
+            890.958
+          ],
+          "median_ms": 893.4,
+          "min_ms": 849.525,
+          "max_ms": 907.701,
+          "hits": 150034,
+          "checksum": 15809898807250,
+          "speedup": 1.1169185135437654,
+          "queries_per_second": 2238.638907544213
+        },
+        "v2": {
+          "samples_ms": [
+            799.655,
+            805.75,
+            803.406,
+            843.341,
+            825.734,
+            805.438,
+            821.099
+          ],
+          "median_ms": 805.75,
+          "min_ms": 799.655,
+          "max_ms": 843.341,
+          "hits": 150034,
+          "checksum": 15809898807250,
+          "speedup": 1.2384176233322992,
+          "queries_per_second": 2482.1594787465096
+        },
+        "v3": {
+          "samples_ms": [
+            851.595,
+            838.699,
+            865.981,
+            885.291,
+            892.521,
+            874.421,
+            863.602
+          ],
+          "median_ms": 865.981,
+          "min_ms": 838.699,
+          "max_ms": 892.521,
+          "hits": 150034,
+          "checksum": 15809898807250,
+          "speedup": 1.1522827868047913,
+          "queries_per_second": 2309.5194929219
+        },
+        "v4": {
+          "samples_ms": [
+            125.011,
+            111.096,
+            114.354,
+            110.508,
+            123.607,
+            123.101,
+            114.878
+          ],
+          "median_ms": 114.878,
+          "min_ms": 110.508,
+          "max_ms": 125.011,
+          "hits": 150034,
+          "checksum": 15809898807250,
+          "speedup": 8.686214941067915,
+          "queries_per_second": 17409.773847037726
+        }
+      }
+    },
+    "clustered_0.1": {
+      "N": 200000,
+      "M": 2000,
+      "w": 0.1,
+      "dist": "clustered",
+      "seed": 42,
+      "repeats": 7,
+      "AVX2": "da",
+      "source": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\poredjenje_svih\\clustered_0.1_compare.txt",
+      "variants": {
+        "ref": {
+          "samples_ms": [
+            1162.835,
+            1174.71,
+            1178.436,
+            1167.326,
+            1158.489,
+            1154.627,
+            1108.253
+          ],
+          "median_ms": 1162.835,
+          "min_ms": 1108.253,
+          "max_ms": 1178.436,
+          "hits": 3783473,
+          "checksum": 395036598527297,
+          "speedup": 1.0,
+          "queries_per_second": 1719.934470496674
+        },
+        "v1": {
+          "samples_ms": [
+            1057.716,
+            1055.05,
+            1055.357,
+            1117.551,
+            1051.196,
+            1060.176,
+            1098.353
+          ],
+          "median_ms": 1057.716,
+          "min_ms": 1051.196,
+          "max_ms": 1117.551,
+          "hits": 3783473,
+          "checksum": 395036598527297,
+          "speedup": 1.0993830101842084,
+          "queries_per_second": 1890.866735494216
+        },
+        "v2": {
+          "samples_ms": [
+            998.447,
+            997.102,
+            1013.264,
+            1030.556,
+            993.367,
+            1003.007,
+            989.615
+          ],
+          "median_ms": 998.447,
+          "min_ms": 989.615,
+          "max_ms": 1030.556,
+          "hits": 3783473,
+          "checksum": 395036598527297,
+          "speedup": 1.1646436916531373,
+          "queries_per_second": 2003.1108311207304
+        },
+        "v3": {
+          "samples_ms": [
+            1071.432,
+            1072.765,
+            1056.729,
+            1067.205,
+            1078.277,
+            1076.499,
+            1043.518
+          ],
+          "median_ms": 1071.432,
+          "min_ms": 1043.518,
+          "max_ms": 1078.277,
+          "hits": 3783473,
+          "checksum": 395036598527297,
+          "speedup": 1.085309193677247,
+          "queries_per_second": 1866.6606933524479
+        },
+        "v4": {
+          "samples_ms": [
+            151.076,
+            169.929,
+            149.751,
+            172.161,
+            182.752,
+            161.57,
+            160.105
+          ],
+          "median_ms": 161.57,
+          "min_ms": 149.751,
+          "max_ms": 182.752,
+          "hits": 3783473,
+          "checksum": 395036598527297,
+          "speedup": 7.197097233397289,
+          "queries_per_second": 12378.535619236245
+        }
+      }
+    },
+    "malo": {
+      "N": 20000,
+      "M": 200,
+      "w": 0.02,
+      "dist": "uniform",
+      "seed": 42,
+      "repeats": 7,
+      "AVX2": "da",
+      "source": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\poredjenje_svih\\malo_compare.txt",
+      "variants": {
+        "ref": {
+          "samples_ms": [
+            9.841,
+            9.625,
+            9.68,
+            9.489,
+            9.689,
+            10.604,
+            10.182
+          ],
+          "median_ms": 9.689,
+          "min_ms": 9.489,
+          "max_ms": 10.604,
+          "hits": 1632,
+          "checksum": 1622871102,
+          "speedup": 1.0,
+          "queries_per_second": 20641.965115078954
+        },
+        "v1": {
+          "samples_ms": [
+            8.64,
+            8.676,
+            8.604,
+            9.828,
+            9.188,
+            8.656,
+            9.665
+          ],
+          "median_ms": 8.676,
+          "min_ms": 8.604,
+          "max_ms": 9.828,
+          "hits": 1632,
+          "checksum": 1622871102,
+          "speedup": 1.1167588750576303,
+          "queries_per_second": 23052.09774089442
+        },
+        "v2": {
+          "samples_ms": [
+            8.042,
+            8.094,
+            7.935,
+            9.046,
+            8.399,
+            9.419,
+            14.143
+          ],
+          "median_ms": 8.399,
+          "min_ms": 7.935,
+          "max_ms": 14.143,
+          "hits": 1632,
+          "checksum": 1622871102,
+          "speedup": 1.1535897130610788,
+          "queries_per_second": 23812.35861412073
+        },
+        "v3": {
+          "samples_ms": [
+            8.392,
+            8.344,
+            9.251,
+            13.44,
+            8.629,
+            8.445,
+            9.74
+          ],
+          "median_ms": 8.629,
+          "min_ms": 8.344,
+          "max_ms": 13.44,
+          "hits": 1632,
+          "checksum": 1622871102,
+          "speedup": 1.1228415807161896,
+          "queries_per_second": 23177.656738903697
+        },
+        "v4": {
+          "samples_ms": [
+            0.933,
+            0.931,
+            0.944,
+            0.951,
+            0.912,
+            2.261,
+            0.979
+          ],
+          "median_ms": 0.944,
+          "min_ms": 0.912,
+          "max_ms": 2.261,
+          "hits": 1632,
+          "checksum": 1622871102,
+          "speedup": 10.263771186440678,
+          "queries_per_second": 211864.40677966102
+        }
+      }
+    },
+    "veliko": {
+      "N": 1000000,
+      "M": 2000,
+      "w": 0.02,
+      "dist": "uniform",
+      "seed": 42,
+      "repeats": 7,
+      "AVX2": "da",
+      "source": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\poredjenje_svih\\veliko_compare.txt",
+      "variants": {
+        "ref": {
+          "samples_ms": [
+            6279.33,
+            6442.7,
+            6452.18,
+            5942.284,
+            6218.932,
+            6058.722,
+            6388.14
+          ],
+          "median_ms": 6279.33,
+          "min_ms": 5942.284,
+          "max_ms": 6452.18,
+          "hits": 791549,
+          "checksum": 396646997503433,
+          "speedup": 1.0,
+          "queries_per_second": 318.50531824255137
+        },
+        "v1": {
+          "samples_ms": [
+            5489.798,
+            5257.626,
+            5220.286,
+            5247.615,
+            5184.625,
+            5195.383,
+            5192.357
+          ],
+          "median_ms": 5220.286,
+          "min_ms": 5184.625,
+          "max_ms": 5489.798,
+          "hits": 791549,
+          "checksum": 396646997503433,
+          "speedup": 1.2028708771894874,
+          "queries_per_second": 383.12077154393455
+        },
+        "v2": {
+          "samples_ms": [
+            4806.556,
+            4885.815,
+            4918.919,
+            4844.304,
+            4790.314,
+            4929.03,
+            4800.424
+          ],
+          "median_ms": 4844.304,
+          "min_ms": 4790.314,
+          "max_ms": 4929.03,
+          "hits": 791549,
+          "checksum": 396646997503433,
+          "speedup": 1.2962295512420359,
+          "queries_per_second": 412.8560057337442
+        },
+        "v3": {
+          "samples_ms": [
+            5040.813,
+            5174.201,
+            5091.009,
+            5025.441,
+            4874.591,
+            5285.236,
+            5097.512
+          ],
+          "median_ms": 5091.009,
+          "min_ms": 4874.591,
+          "max_ms": 5285.236,
+          "hits": 791549,
+          "checksum": 396646997503433,
+          "speedup": 1.2334156156471143,
+          "queries_per_second": 392.8494331870166
+        },
+        "v4": {
+          "samples_ms": [
+            1077.661,
+            1107.161,
+            1155.773,
+            1063.053,
+            1034.692,
+            1088.006,
+            1067.44
+          ],
+          "median_ms": 1077.661,
+          "min_ms": 1034.692,
+          "max_ms": 1155.773,
+          "hits": 791549,
+          "checksum": 396646997503433,
+          "speedup": 5.826813812506901,
+          "queries_per_second": 1855.8711876926045
+        }
+      }
+    }
+  },
+  "memory": {
+    "ref": {
+      "heap_peak_bytes": 4989568,
+      "rss_peak_kib": 8320,
+      "preparation_ms": 3.286,
+      "N": 200000,
+      "M": 200,
+      "w": 0.02,
+      "dist": "uniform",
+      "samples": 1,
+      "heap_includes": "heap + allocator overhead, no stacks",
+      "rss_source": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\poredjenje_svih\\rss_ref.txt",
+      "massif_source": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\poredjenje_svih\\massif_ref.out"
+    },
+    "v1": {
+      "heap_peak_bytes": 4189136,
+      "rss_peak_kib": 7424,
+      "preparation_ms": 3.178,
+      "N": 200000,
+      "M": 200,
+      "w": 0.02,
+      "dist": "uniform",
+      "samples": 1,
+      "heap_includes": "heap + allocator overhead, no stacks",
+      "rss_source": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\poredjenje_svih\\rss_v1.txt",
+      "massif_source": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\poredjenje_svih\\massif_v1.out"
+    },
+    "v2": {
+      "heap_peak_bytes": 4189136,
+      "rss_peak_kib": 7552,
+      "preparation_ms": 3.097,
+      "N": 200000,
+      "M": 200,
+      "w": 0.02,
+      "dist": "uniform",
+      "samples": 1,
+      "heap_includes": "heap + allocator overhead, no stacks",
+      "rss_source": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\poredjenje_svih\\rss_v2.txt",
+      "massif_source": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\poredjenje_svih\\massif_v2.out"
+    },
+    "v3": {
+      "heap_peak_bytes": 5784520,
+      "rss_peak_kib": 7552,
+      "preparation_ms": 3.582,
+      "N": 200000,
+      "M": 200,
+      "w": 0.02,
+      "dist": "uniform",
+      "samples": 1,
+      "heap_includes": "heap + allocator overhead, no stacks",
+      "rss_source": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\poredjenje_svih\\rss_v3.txt",
+      "massif_source": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\poredjenje_svih\\massif_v3.out"
+    },
+    "v4": {
+      "heap_peak_bytes": 4189136,
+      "rss_peak_kib": 7552,
+      "preparation_ms": 4.602,
+      "N": 200000,
+      "M": 200,
+      "w": 0.02,
+      "dist": "uniform",
+      "samples": 1,
+      "heap_includes": "heap + allocator overhead, no stacks",
+      "rss_source": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\poredjenje_svih\\rss_v4.txt",
+      "massif_source": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\poredjenje_svih\\massif_v4.out"
+    }
+  },
+  "hardware": {
+    "ref": {
+      "p_core_cpi": 1.037187,
+      "p_core_retiring_pct": 16.5,
+      "p_core_backend_pct": 7.0,
+      "p_core_memory_pct": 0.9,
+      "p_core_clockticks": 36849043000.0,
+      "e_core_clockticks": 62664000.0,
+      "cpu_time_s": 14.735803,
+      "process": "poredjenje_pdb.exe",
+      "result_mux_reliability": 0.885,
+      "result_elapsed_time_s": 15.447,
+      "mux_scope": "Cijeli VTune rezultat, ukljucujuci cmd.exe; nije posebno za ciljni proces",
+      "result": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\pdb_test\\uarch_pdb_wrapper_ref",
+      "tsv": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\07_podaci\\vtune_process_ref.tsv",
+      "N": 200000,
+      "M": 2000,
+      "w": 0.02,
+      "dist": "uniform",
+      "repeats": 6,
+      "collector": "Event-based sampling driver; process selected, with cmd.exe launch and follow-child"
+    },
+    "v1": {
+      "p_core_cpi": 0.953829,
+      "p_core_retiring_pct": 19.1,
+      "p_core_backend_pct": 7.4,
+      "p_core_memory_pct": 1.0,
+      "p_core_clockticks": 33820283000.0,
+      "e_core_clockticks": 31332000.0,
+      "cpu_time_s": 13.643891,
+      "process": "poredjenje_pdb.exe",
+      "result_mux_reliability": 0.994,
+      "result_elapsed_time_s": 14.301,
+      "mux_scope": "Cijeli VTune rezultat, ukljucujuci cmd.exe; nije posebno za ciljni proces",
+      "result": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\pdb_test\\uarch_pdb_wrapper_v1",
+      "tsv": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\07_podaci\\vtune_process_v1.tsv",
+      "N": 200000,
+      "M": 2000,
+      "w": 0.02,
+      "dist": "uniform",
+      "repeats": 6,
+      "collector": "Event-based sampling driver; process selected, with cmd.exe launch and follow-child"
+    },
+    "v2": {
+      "p_core_cpi": 1.468667,
+      "p_core_retiring_pct": 12.0,
+      "p_core_backend_pct": 7.9,
+      "p_core_memory_pct": 0.4,
+      "p_core_clockticks": 31574823000.0,
+      "e_core_clockticks": 10444000.0,
+      "cpu_time_s": 12.729964,
+      "process": "poredjenje_pdb.exe",
+      "result_mux_reliability": 0.957,
+      "result_elapsed_time_s": 13.241,
+      "mux_scope": "Cijeli VTune rezultat, ukljucujuci cmd.exe; nije posebno za ciljni proces",
+      "result": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\pdb_test\\uarch_pdb_wrapper_v2",
+      "tsv": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\07_podaci\\vtune_process_v2.tsv",
+      "N": 200000,
+      "M": 2000,
+      "w": 0.02,
+      "dist": "uniform",
+      "repeats": 6,
+      "collector": "Event-based sampling driver; process selected, with cmd.exe launch and follow-child"
+    },
+    "v3": {
+      "p_core_cpi": 1.118899,
+      "p_core_retiring_pct": 16.4,
+      "p_core_backend_pct": 8.7,
+      "p_core_memory_pct": 1.5,
+      "p_core_clockticks": 33219753000.0,
+      "e_core_clockticks": 919072000.0,
+      "cpu_time_s": 17.268597,
+      "process": "poredjenje_pdb.exe",
+      "result_mux_reliability": 0.992,
+      "result_elapsed_time_s": 18.522,
+      "mux_scope": "Cijeli VTune rezultat, ukljucujuci cmd.exe; nije posebno za ciljni proces",
+      "result": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\pdb_test\\uarch_pdb_wrapper_v3",
+      "tsv": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\07_podaci\\vtune_process_v3.tsv",
+      "N": 200000,
+      "M": 2000,
+      "w": 0.02,
+      "dist": "uniform",
+      "repeats": 6,
+      "collector": "Event-based sampling driver; process selected, with cmd.exe launch and follow-child"
+    },
+    "v4": {
+      "p_core_cpi": 0.234567,
+      "p_core_retiring_pct": 82.3,
+      "p_core_backend_pct": 21.4,
+      "p_core_memory_pct": 5.9,
+      "p_core_clockticks": 47353096000.0,
+      "e_core_clockticks": 587475000.0,
+      "cpu_time_s": 19.638404,
+      "process": "poredjenje_pdb.exe",
+      "result_mux_reliability": 0.99,
+      "result_elapsed_time_s": 21.333,
+      "mux_scope": "Cijeli VTune rezultat, ukljucujuci cmd.exe; nije posebno za ciljni proces",
+      "result": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\sirova_mjerenja\\pdb_test\\uarch_pdb_wrapper_v4",
+      "tsv": "C:\\Users\\DT User\\Desktop\\VI semestar\\PRS\\3.Profiliranje_i_optimizacija\\07_podaci\\vtune_process_v4.tsv",
+      "N": 200000,
+      "M": 2000,
+      "w": 0.02,
+      "dist": "uniform",
+      "repeats": 80,
+      "collector": "Event-based sampling driver; process selected, with cmd.exe launch and follow-child"
+    }
+  },
+  "warnings": [
+    "Vremena: WSL/G++14, izolovana obrada upita, 7 ponavljanja, topli kapaciteti izlaza; podaci generisani prije mjerenja.",
+    "Heap i RSS: WSL/G++14, N=200000 M=200, razliciti procesi, po jedno mjerenje; ne dodavati ih.",
+    "VTune: Windows/Clang 22, 6 ponavljanja ref/V1/V2/V3 i 80 V4, razlicito trajanje; normalizovane P-core metrike su procjene.",
+    "Retiring, Back-End i Memory Bound imaju hijerarhijske ili procijenjene vrijednosti i ne sabiraju se; kod hibridnog procesora moguca je migracija.",
+    "Priprema u compare modu stvara i AoS i SoA i nije trosak jedne verzije; preparation_ms je zaseban pojedinacni RSS proces.",
+    "Provjera jednakih pogodaka i zbira nije zamjena za punu provjeru ID-jeva iz zasebnih verify izlaza."
+  ]
+}

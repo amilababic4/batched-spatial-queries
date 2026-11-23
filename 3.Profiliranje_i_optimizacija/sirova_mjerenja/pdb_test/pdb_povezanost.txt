@@ -1,0 +1,9 @@
+
+> Entry 6 0000000000018000 0000001c Debug Directory
+  Entry 7 0000000000000000 00000000 Description Directory
+> There is a debug directory in .buildid at 0x40018000
+  
+>   2        CodeView 0000008a 0001801c 0001641c
+> (format RSDS signature 24fa309169954e7d4c4c44205044422e age 1 pdb C:/Users/DT User/Desktop/VI semestar/PRS/3.Profiliranje_i_optimizacija/windows_build/pdb_build/poredjenje_pdb.pdb)
+  
+

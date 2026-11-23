@@ -1,0 +1,11 @@
+﻿2026-11-22T23:05:06.4758518+01:00 collect baseline exit=0
+2026-11-22T23:05:06.4917549+01:00 target baseline output_ok
+2026-11-22T23:05:12.7757216+01:00 report baseline funkcije_linije exit=0
+2026-11-22T23:05:17.0583122+01:00 report baseline procesi exit=0
+2026-11-22T23:05:21.4627189+01:00 report baseline summary exit=0
+2026-11-22T23:05:34.8516019+01:00 collect optimized exit=0
+2026-11-22T23:05:34.8535364+01:00 target optimized output_ok
+2026-11-22T23:05:40.8999570+01:00 report optimized funkcije_linije exit=0
+2026-11-22T23:05:45.2374557+01:00 report optimized procesi exit=0
+2026-11-22T23:05:50.1045879+01:00 report optimized summary exit=0
+2026-11-22T23:05:50.1055601+01:00 gotovo

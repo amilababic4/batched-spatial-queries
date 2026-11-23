@@ -1,0 +1,255 @@
+In file included from C:\Users\DT User\Desktop\VI semestar\PRS\src\psi_benchmark.cpp:31:
+In file included from C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/primitives.h:18:
+In file included from C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/counting_sort.h:15:
+In file included from C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/sequence_ops.h:12:
+In file included from C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../delayed_sequence.h:34:
+In file included from C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../utilities.h:21:
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../type_traits.h:285:54: warning: builtin __is_trivially_relocatable is deprecated; use __builtin_is_cpp_trivially_relocatable instead [-Wdeprecated-builtins]
+  285 | struct is_trivially_relocatable : std::bool_constant<__is_trivially_relocatable(T)> { };
+      |                                                      ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../type_traits.h:285:54: warning: builtin __is_trivially_relocatable is deprecated; use __builtin_is_cpp_trivially_relocatable instead [-Wdeprecated-builtins]
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../type_traits.h:307:52: note: in instantiation of template class 'parlay::is_trivially_relocatable<parlay::allocator<int>>' requested here
+  307 | inline constexpr bool is_trivially_relocatable_v = is_trivially_relocatable<T>::value;
+      |                                                    ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../alloc.h:189:15: note: in instantiation of variable template specialization 'parlay::is_trivially_relocatable_v<parlay::allocator<int>>' requested here
+  189 | static_assert(is_trivially_relocatable_v<allocator<int>>);
+      |               ^
+In file included from C:\Users\DT User\Desktop\VI semestar\PRS\src\psi_benchmark.cpp:31:
+In file included from C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/primitives.h:18:
+In file included from C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/counting_sort.h:15:
+In file included from C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/sequence_ops.h:16:
+In file included from C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../sequence.h:40:
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:234:19: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'parlay::sequence_internal::sequence_base<unsigned long long, parlay::allocator<unsigned long long>, false>::storage_impl' [-Wnontrivial-memcall]
+  234 |       std::memset(this, 0, sizeof(*this));  // NOLINT
+      |                   ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:116:52: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<unsigned long long, parlay::allocator<unsigned long long>, false>::storage_impl::set_to_empty_representation' requested here
+  116 |     storage_impl() : T_allocator_type(), _data() { set_to_empty_representation(); }
+      |                                                    ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:591:21: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<unsigned long long, parlay::allocator<unsigned long long>, false>::storage_impl::storage_impl' requested here
+  591 |   sequence_base() : storage() { num_workers();  /* Touch the scheduler to force it to initialize before any sequence */ }
+      |                     ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../sequence.h:505:44: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<unsigned long long, parlay::allocator<unsigned long long>, false>::sequence_base' requested here
+  505 |   sequence(size_t n, _uninitialized_tag) : sequence_base_type() {
+      |                                            ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../sequence.h:479:57: note: in instantiation of member function 'parlay::sequence<unsigned long long>::sequence' requested here
+  479 |   static sequence_type uninitialized(size_t n) { return sequence_type(n, _uninitialized_tag{}); }
+      |                                                         ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/sequence_ops.h:247:28: note: in instantiation of member function 'parlay::sequence<unsigned long long>::uninitialized' requested here
+  247 |   auto sums = sequence<T>::uninitialized(l);
+      |                            ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:234:19: note: explicitly cast the pointer to silence this warning
+  234 |       std::memset(this, 0, sizeof(*this));  // NOLINT
+      |                   ^
+      |                   (void*)
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:234:19: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'parlay::sequence_internal::sequence_base<psi::aug_point<double, '\x02', Id>, parlay::allocator<psi::aug_point<double, '\x02', Id>>, false>::storage_impl' [-Wnontrivial-memcall]
+  234 |       std::memset(this, 0, sizeof(*this));  // NOLINT
+      |                   ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:116:52: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<psi::aug_point<double, '\x02', Id>, parlay::allocator<psi::aug_point<double, '\x02', Id>>, false>::storage_impl::set_to_empty_representation' requested here
+  116 |     storage_impl() : T_allocator_type(), _data() { set_to_empty_representation(); }
+      |                                                    ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:591:21: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<psi::aug_point<double, '\x02', Id>, parlay::allocator<psi::aug_point<double, '\x02', Id>>, false>::storage_impl::storage_impl' requested here
+  591 |   sequence_base() : storage() { num_workers();  /* Touch the scheduler to force it to initialize before any sequence */ }
+      |                     ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../sequence.h:505:44: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<psi::aug_point<double, '\x02', Id>, parlay::allocator<psi::aug_point<double, '\x02', Id>>, false>::sequence_base' requested here
+  505 |   sequence(size_t n, _uninitialized_tag) : sequence_base_type() {
+      |                                            ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../sequence.h:479:57: note: in instantiation of member function 'parlay::sequence<psi::aug_point<double, '\x02', Id>>::sequence' requested here
+  479 |   static sequence_type uninitialized(size_t n) { return sequence_type(n, _uninitialized_tag{}); }
+      |                                                         ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:214:31: note: in instantiation of member function 'parlay::sequence<psi::aug_point<double, '\x02', Id>>::uninitialized' requested here
+  214 |         points_type B = points_type::uninitialized(A.size());
+      |                                      ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:17:50: note: in instantiation of member function 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build_' requested here
+   17 |         base_type::ingest_range(in, [&](slice_type A) { build_(A); });
+      |                                                         ^
+C:\Users\DT User\Desktop\VI semestar\PRS\src\psi_benchmark.cpp:103:12: note: in instantiation of function template specialization 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build<parlay::slice<psi::aug_point<double, '\x02', Id> *, psi::aug_point<double, '\x02', Id> *>>' requested here
+  103 |     stablo.build(parlay::make_slice(tacke));
+      |            ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:234:19: note: explicitly cast the pointer to silence this warning
+  234 |       std::memset(this, 0, sizeof(*this));  // NOLINT
+      |                   ^
+      |                   (void*)
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:234:19: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'parlay::sequence_internal::sequence_base<std::pair<psi::basic_point<double, '\x02'>, psi::basic_point<double, '\x02'>>, parlay::allocator<std::pair<psi::basic_point<double, '\x02'>, psi::basic_point<double, '\x02'>>>, false>::storage_impl' [-Wnontrivial-memcall]
+  234 |       std::memset(this, 0, sizeof(*this));  // NOLINT
+      |                   ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:116:52: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<std::pair<psi::basic_point<double, '\x02'>, psi::basic_point<double, '\x02'>>, parlay::allocator<std::pair<psi::basic_point<double, '\x02'>, psi::basic_point<double, '\x02'>>>, false>::storage_impl::set_to_empty_representation' requested here
+  116 |     storage_impl() : T_allocator_type(), _data() { set_to_empty_representation(); }
+      |                                                    ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:591:21: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<std::pair<psi::basic_point<double, '\x02'>, psi::basic_point<double, '\x02'>>, parlay::allocator<std::pair<psi::basic_point<double, '\x02'>, psi::basic_point<double, '\x02'>>>, false>::storage_impl::storage_impl' requested here
+  591 |   sequence_base() : storage() { num_workers();  /* Touch the scheduler to force it to initialize before any sequence */ }
+      |                     ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../sequence.h:505:44: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<std::pair<psi::basic_point<double, '\x02'>, psi::basic_point<double, '\x02'>>, parlay::allocator<std::pair<psi::basic_point<double, '\x02'>, psi::basic_point<double, '\x02'>>>, false>::sequence_base' requested here
+  505 |   sequence(size_t n, _uninitialized_tag) : sequence_base_type() {
+      |                                            ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../sequence.h:479:57: note: in instantiation of member function 'parlay::sequence<std::pair<psi::basic_point<double, '\x02'>, psi::basic_point<double, '\x02'>>>::sequence' requested here
+  479 |   static sequence_type uninitialized(size_t n) { return sequence_type(n, _uninitialized_tag{}); }
+      |                                                         ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/sequence_ops.h:201:28: note: in instantiation of member function 'parlay::sequence<std::pair<psi::basic_point<double, '\x02'>, psi::basic_point<double, '\x02'>>>::uninitialized' requested here
+  201 |   auto sums = sequence<T>::uninitialized(l);
+      |                            ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:215:31: note: in instantiation of member function 'psi::point_traits<psi::aug_point<double, '\x02', Id>>::get_box' requested here
+  215 |         this->tree_box_ = base_type::get_box(A);
+      |                                      ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:17:50: note: in instantiation of member function 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build_' requested here
+   17 |         base_type::ingest_range(in, [&](slice_type A) { build_(A); });
+      |                                                         ^
+C:\Users\DT User\Desktop\VI semestar\PRS\src\psi_benchmark.cpp:103:12: note: in instantiation of function template specialization 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build<parlay::slice<psi::aug_point<double, '\x02', Id> *, psi::aug_point<double, '\x02', Id> *>>' requested here
+  103 |     stablo.build(parlay::make_slice(tacke));
+      |            ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:234:19: note: explicitly cast the pointer to silence this warning
+  234 |       std::memset(this, 0, sizeof(*this));  // NOLINT
+      |                   ^
+      |                   (void*)
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:234:19: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'parlay::sequence_internal::sequence_base<std::pair<double, unsigned char>, parlay::allocator<std::pair<double, unsigned char>>, false>::storage_impl' [-Wnontrivial-memcall]
+  234 |       std::memset(this, 0, sizeof(*this));  // NOLINT
+      |                   ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:116:52: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<std::pair<double, unsigned char>, parlay::allocator<std::pair<double, unsigned char>>, false>::storage_impl::set_to_empty_representation' requested here
+  116 |     storage_impl() : T_allocator_type(), _data() { set_to_empty_representation(); }
+      |                                                    ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:591:21: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<std::pair<double, unsigned char>, parlay::allocator<std::pair<double, unsigned char>>, false>::storage_impl::storage_impl' requested here
+  591 |   sequence_base() : storage() { num_workers();  /* Touch the scheduler to force it to initialize before any sequence */ }
+      |                     ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../sequence.h:505:44: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<std::pair<double, unsigned char>, parlay::allocator<std::pair<double, unsigned char>>, false>::sequence_base' requested here
+  505 |   sequence(size_t n, _uninitialized_tag) : sequence_base_type() {
+      |                                            ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../sequence.h:479:57: note: in instantiation of member function 'parlay::sequence<std::pair<double, unsigned char>>::sequence' requested here
+  479 |   static sequence_type uninitialized(size_t n) { return sequence_type(n, _uninitialized_tag{}); }
+      |                                                         ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:152:35: note: in instantiation of member function 'parlay::sequence<std::pair<double, unsigned char>>::uninitialized' requested here
+  152 |         auto pivots = splitter_seq_type::uninitialized(
+      |                                          ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:217:3: note: in instantiation of member function 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build_recursive' requested here
+  217 |                 build_recursive(A, B.cut(0, A.size()), 0, this->tree_box_);
+      |                 ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:17:50: note: in instantiation of member function 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build_' requested here
+   17 |         base_type::ingest_range(in, [&](slice_type A) { build_(A); });
+      |                                                         ^
+C:\Users\DT User\Desktop\VI semestar\PRS\src\psi_benchmark.cpp:103:12: note: in instantiation of function template specialization 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build<parlay::slice<psi::aug_point<double, '\x02', Id> *, psi::aug_point<double, '\x02', Id> *>>' requested here
+  103 |     stablo.build(parlay::make_slice(tacke));
+      |            ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:234:19: note: explicitly cast the pointer to silence this warning
+  234 |       std::memset(this, 0, sizeof(*this));  // NOLINT
+      |                   ^
+      |                   (void*)
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:234:19: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl' [-Wnontrivial-memcall]
+  234 |       std::memset(this, 0, sizeof(*this));  // NOLINT
+      |                   ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:116:52: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::set_to_empty_representation' requested here
+  116 |     storage_impl() : T_allocator_type(), _data() { set_to_empty_representation(); }
+      |                                                    ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:591:21: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::storage_impl::storage_impl' requested here
+  591 |   sequence_base() : storage() { num_workers();  /* Touch the scheduler to force it to initialize before any sequence */ }
+      |                     ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../sequence.h:107:16: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<unsigned int, parlay::allocator<unsigned int>, false>::sequence_base' requested here
+  107 |   sequence() : sequence_base_type() {}
+      |                ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:155:31: note: in instantiation of member function 'parlay::sequence<unsigned int>::sequence' requested here
+  155 |         parlay::sequence<balls_type> sums;
+      |                                      ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:217:3: note: in instantiation of member function 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build_recursive' requested here
+  217 |                 build_recursive(A, B.cut(0, A.size()), 0, this->tree_box_);
+      |                 ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:17:50: note: in instantiation of member function 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build_' requested here
+   17 |         base_type::ingest_range(in, [&](slice_type A) { build_(A); });
+      |                                                         ^
+C:\Users\DT User\Desktop\VI semestar\PRS\src\psi_benchmark.cpp:103:12: note: in instantiation of function template specialization 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build<parlay::slice<psi::aug_point<double, '\x02', Id> *, psi::aug_point<double, '\x02', Id> *>>' requested here
+  103 |     stablo.build(parlay::make_slice(tacke));
+      |            ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:234:19: note: explicitly cast the pointer to silence this warning
+  234 |       std::memset(this, 0, sizeof(*this));  // NOLINT
+      |                   ^
+      |                   (void*)
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:234:19: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'parlay::sequence_internal::sequence_base<parlay::sequence<unsigned int>, parlay::allocator<parlay::sequence<unsigned int>>, false>::storage_impl' [-Wnontrivial-memcall]
+  234 |       std::memset(this, 0, sizeof(*this));  // NOLINT
+      |                   ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:116:52: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<parlay::sequence<unsigned int>, parlay::allocator<parlay::sequence<unsigned int>>, false>::storage_impl::set_to_empty_representation' requested here
+  116 |     storage_impl() : T_allocator_type(), _data() { set_to_empty_representation(); }
+      |                                                    ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:591:21: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<parlay::sequence<unsigned int>, parlay::allocator<parlay::sequence<unsigned int>>, false>::storage_impl::storage_impl' requested here
+  591 |   sequence_base() : storage() { num_workers();  /* Touch the scheduler to force it to initialize before any sequence */ }
+      |                     ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../sequence.h:207:45: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<parlay::sequence<unsigned int>, parlay::allocator<parlay::sequence<unsigned int>>, false>::sequence_base' requested here
+  207 |   sequence(size_t n, const value_type& t) : sequence_base_type() { initialize_fill(n, t); }
+      |                                             ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/base_tree_impl/points_op.hpp:49:49: note: in instantiation of member function 'parlay::sequence<parlay::sequence<unsigned int>>::sequence' requested here
+   49 |         parlay::sequence<parlay::sequence<balls_type>> offset(
+      |                                                        ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:158:13: note: in instantiation of member function 'psi::base_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>, psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>>::partition' requested here
+  158 |         base_type::partition(in, out, in.size(), pivots, sums);
+      |                    ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:217:3: note: in instantiation of member function 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build_recursive' requested here
+  217 |                 build_recursive(A, B.cut(0, A.size()), 0, this->tree_box_);
+      |                 ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:17:50: note: in instantiation of member function 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build_' requested here
+   17 |         base_type::ingest_range(in, [&](slice_type A) { build_(A); });
+      |                                                         ^
+C:\Users\DT User\Desktop\VI semestar\PRS\src\psi_benchmark.cpp:103:12: note: in instantiation of function template specialization 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build<parlay::slice<psi::aug_point<double, '\x02', Id> *, psi::aug_point<double, '\x02', Id> *>>' requested here
+  103 |     stablo.build(parlay::make_slice(tacke));
+      |            ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:234:19: note: explicitly cast the pointer to silence this warning
+  234 |       std::memset(this, 0, sizeof(*this));  // NOLINT
+      |                   ^
+      |                   (void*)
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:234:19: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'parlay::sequence_internal::sequence_base<psi::node *, parlay::allocator<psi::node *>, false>::storage_impl' [-Wnontrivial-memcall]
+  234 |       std::memset(this, 0, sizeof(*this));  // NOLINT
+      |                   ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:116:52: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<psi::node *, parlay::allocator<psi::node *>, false>::storage_impl::set_to_empty_representation' requested here
+  116 |     storage_impl() : T_allocator_type(), _data() { set_to_empty_representation(); }
+      |                                                    ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:591:21: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<psi::node *, parlay::allocator<psi::node *>, false>::storage_impl::storage_impl' requested here
+  591 |   sequence_base() : storage() { num_workers();  /* Touch the scheduler to force it to initialize before any sequence */ }
+      |                     ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../sequence.h:505:44: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<psi::node *, parlay::allocator<psi::node *>, false>::sequence_base' requested here
+  505 |   sequence(size_t n, _uninitialized_tag) : sequence_base_type() {
+      |                                            ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../sequence.h:479:57: note: in instantiation of member function 'parlay::sequence<psi::node *>::sequence' requested here
+  479 |   static sequence_type uninitialized(size_t n) { return sequence_type(n, _uninitialized_tag{}); }
+      |                                                         ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:165:29: note: in instantiation of member function 'parlay::sequence<psi::node *>::uninitialized' requested here
+  165 |                 parlay::sequence<node *>::uninitialized(base_type::bucket_num);
+      |                                           ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:217:3: note: in instantiation of member function 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build_recursive' requested here
+  217 |                 build_recursive(A, B.cut(0, A.size()), 0, this->tree_box_);
+      |                 ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:17:50: note: in instantiation of member function 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build_' requested here
+   17 |         base_type::ingest_range(in, [&](slice_type A) { build_(A); });
+      |                                                         ^
+C:\Users\DT User\Desktop\VI semestar\PRS\src\psi_benchmark.cpp:103:12: note: in instantiation of function template specialization 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build<parlay::slice<psi::aug_point<double, '\x02', Id> *, psi::aug_point<double, '\x02', Id> *>>' requested here
+  103 |     stablo.build(parlay::make_slice(tacke));
+      |            ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:234:19: note: explicitly cast the pointer to silence this warning
+  234 |       std::memset(this, 0, sizeof(*this));  // NOLINT
+      |                   ^
+      |                   (void*)
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:234:19: warning: first argument in call to 'memset' is a pointer to non-trivially copyable type 'parlay::sequence_internal::sequence_base<unsigned char, parlay::allocator<unsigned char>, false>::storage_impl' [-Wnontrivial-memcall]
+  234 |       std::memset(this, 0, sizeof(*this));  // NOLINT
+      |                   ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:116:52: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<unsigned char, parlay::allocator<unsigned char>, false>::storage_impl::set_to_empty_representation' requested here
+  116 |     storage_impl() : T_allocator_type(), _data() { set_to_empty_representation(); }
+      |                                                    ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:591:21: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<unsigned char, parlay::allocator<unsigned char>, false>::storage_impl::storage_impl' requested here
+  591 |   sequence_base() : storage() { num_workers();  /* Touch the scheduler to force it to initialize before any sequence */ }
+      |                     ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../sequence.h:505:44: note: in instantiation of member function 'parlay::sequence_internal::sequence_base<unsigned char, parlay::allocator<unsigned char>, false>::sequence_base' requested here
+  505 |   sequence(size_t n, _uninitialized_tag) : sequence_base_type() {
+      |                                            ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../sequence.h:479:57: note: in instantiation of member function 'parlay::sequence<unsigned char>::sequence' requested here
+  479 |   static sequence_type uninitialized(size_t n) { return sequence_type(n, _uninitialized_tag{}); }
+      |                                                         ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:166:36: note: in instantiation of member function 'parlay::sequence<unsigned char>::uninitialized' requested here
+  166 |         auto nodes_map = bucket_seq_type::uninitialized(base_type::bucket_num);
+      |                                           ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:217:3: note: in instantiation of member function 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build_recursive' requested here
+  217 |                 build_recursive(A, B.cut(0, A.size()), 0, this->tree_box_);
+      |                 ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include/psi/kd_tree_impl/kd_build_tree.hpp:17:50: note: in instantiation of member function 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build_' requested here
+   17 |         base_type::ingest_range(in, [&](slice_type A) { build_(A); });
+      |                                                         ^
+C:\Users\DT User\Desktop\VI semestar\PRS\src\psi_benchmark.cpp:103:12: note: in instantiation of function template specialization 'psi::kd_tree<psi::tree_traits<psi::aug_point<double, '\x02', Id>, psi::orthogonal_split_rule<psi::max_stretch_dim<psi::aug_point<double, '\x02', Id>>, psi::object_median<psi::aug_point<double, '\x02', Id>>>>>::build<parlay::slice<psi::aug_point<double, '\x02', Id> *, psi::aug_point<double, '\x02', Id> *>>' requested here
+  103 |     stablo.build(parlay::make_slice(tacke));
+      |            ^
+C:\Users\DT User\Desktop\VI semestar\PRS\reference\psi\include\parlaylib\include/parlay/internal/../internal/sequence_base.h:234:19: note: explicitly cast the pointer to silence this warning
+  234 |       std::memset(this, 0, sizeof(*this));  // NOLINT
+      |                   ^
+      |                   (void*)
+10 warnings generated.

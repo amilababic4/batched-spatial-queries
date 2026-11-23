@@ -38,6 +38,9 @@
 #endif
 
 #include "common/podaci.h"
+#ifdef P07_SEQ_BUFFER
+#include "psi_seq_buffer.h"
+#endif
 
 // ---------- PSI tipovi (po uzoru na reference/psi/example/kd_tree.h) ----------
 
@@ -65,7 +68,9 @@ static double medijan(std::vector<double> v) {
 }
 
 static const char* naziv_varijante() {
-#if defined(P07_SERIAL)
+#if defined(P07_SEQ_BUFFER)
+    return "psi_seq_opt (serijski, ponovna upotreba bafera)";
+#elif defined(P07_SERIAL)
     return "psi_seq (serijski)";
 #elif defined(P07_OPENMP)
     return "psi_omp (OpenMP)";
@@ -83,6 +88,64 @@ static int broj_niti() {
     return (int)parlay::num_workers();
 #endif
 }
+
+// Oznake olaksavaju pregled pozivnog stabla u VTuneu. Ukljucuju se samo u
+// posebnom profiling buildu; nisu dio mjerenja performansi produkcijskog builda.
+#if defined(P07_PROFILE_MARKERS) && (defined(__GNUC__) || defined(__clang__))
+#define P07_FAZA __attribute__((noinline))
+#elif defined(P07_PROFILE_MARKERS) && defined(_MSC_VER)
+#define P07_FAZA __declspec(noinline)
+#else
+#define P07_FAZA
+#endif
+
+static P07_FAZA void izgradi_kd_stablo(Tree& stablo, parlay::sequence<PsiPoint>& tacke) {
+    stablo.build(parlay::make_slice(tacke));
+}
+
+static P07_FAZA void obradi_grupu_upita(
+    const Tree& tree, const std::vector<Tree::box_type>& kutije,
+    const std::vector<p07::Rect>& pravougaonici,
+    std::vector<std::vector<int>>& rezultati, const std::string& raspored) {
+    const size_t M = kutije.size();
+    // Svaki upit pise samo u svoj vektor rezultata.
+    auto obradi_upit = [&](size_t j) {
+        auto nadjene = tree.range_query(kutije[j]);
+        auto& ids = rezultati[j];
+        ids.clear();
+        ids.reserve(nadjene.size());
+        const auto& r = pravougaonici[j];
+        for (const auto& p : nadjene) {
+            // PSI koristi toleranciju na ivicama; nas filter vraca tacan rezultat.
+            if (p07::unutra(p[0], p[1], r)) ids.push_back(p.aug.id);
+        }
+    };
+#if defined(P07_SERIAL)
+    for (size_t j = 0; j < M; ++j) obradi_upit(j);
+#elif defined(P07_OPENMP)
+    const int64_t m = (int64_t)M;
+    if (raspored == "dynamic") {
+#pragma omp parallel for schedule(dynamic, 1)
+        for (int64_t j = 0; j < m; ++j) obradi_upit((size_t)j);
+    } else {
+#pragma omp parallel for schedule(static)
+        for (int64_t j = 0; j < m; ++j) obradi_upit((size_t)j);
+    }
+#else
+    parlay::parallel_for(0, M, obradi_upit, 1);
+#endif
+}
+
+#ifdef P07_SEQ_BUFFER
+static P07_FAZA void obradi_grupu_upita_sa_baferom(
+    const Tree& tree, const std::vector<Tree::box_type>& kutije,
+    const std::vector<p07::Rect>& pravougaonici, const std::vector<unsigned char>& valjani,
+    std::vector<std::vector<int>>& rezultati, p07::seq_buffer::Scratch<PsiPoint>& scratch) {
+    for (size_t j = 0; j < kutije.size(); ++j)
+        p07::seq_buffer::upit_sa_baferom(tree, kutije[j], pravougaonici[j],
+                                         valjani[j] != 0, scratch, rezultati[j]);
+}
+#endif
 
 int main(int argc, char** argv) {
     p07::Postavke s;
@@ -122,6 +185,10 @@ int main(int argc, char** argv) {
         kutije[j].first[0] = r.xmin;  kutije[j].first[1] = r.ymin;
         kutije[j].second[0] = r.xmax; kutije[j].second[1] = r.ymax;
     }
+#ifdef P07_SEQ_BUFFER
+    std::vector<unsigned char> valjani(M);
+    for (size_t j = 0; j < M; ++j) valjani[j] = p07::ispravan(pravougaonici[j]);
+#endif
 
     // ===== 2) IZGRADNJA STABLA =====
     // build() preuredjuje ulazni niz, pa svako mjerenje radi nad svjezom kopijom.
@@ -133,7 +200,7 @@ int main(int argc, char** argv) {
         stablo = std::make_unique<Tree>();
         auto kopija = psi_tacke;
         auto t0 = Clock::now();
-        stablo->build(parlay::make_slice(kopija));
+        izgradi_kd_stablo(*stablo, kopija);
         auto t1 = Clock::now();
         if (rep > 0) t_izgradnja.push_back(sekunde(t0, t1));
     }
@@ -141,42 +208,18 @@ int main(int argc, char** argv) {
 
     // ===== 3) UPITI =====
     std::vector<std::vector<int>> rezultati(M);
-
-    // Jedan upit: svaka iteracija pise samo u svoj rezultati[j] -> nema data race.
-    auto obradi_upit = [&](size_t j) {
-        auto nadjene = tree.range_query(kutije[j]);
-        auto& ids = rezultati[j];
-        ids.clear();
-        ids.reserve(nadjene.size());
-        const auto& r = pravougaonici[j];
-        for (const auto& p : nadjene) {
-            // PSI za double koristi malu toleranciju na ivicama; ovdje
-            // primjenjujemo doslovno isti uslov kao brute force.
-            if (p07::unutra(p[0], p[1], r)) ids.push_back(p.aug.id);
-        }
-    };
-
-    auto sve_upite = [&]() {
-#if defined(P07_SERIAL)
-        for (size_t j = 0; j < M; ++j) obradi_upit(j);
-#elif defined(P07_OPENMP)
-        const int64_t m = (int64_t)M;
-        if (raspored == "dynamic") {
-#pragma omp parallel for schedule(dynamic, 1)
-            for (int64_t j = 0; j < m; ++j) obradi_upit((size_t)j);
-        } else {
-#pragma omp parallel for schedule(static)
-            for (int64_t j = 0; j < m; ++j) obradi_upit((size_t)j);
-        }
-#else
-        parlay::parallel_for(0, M, obradi_upit, 1);
+#ifdef P07_SEQ_BUFFER
+    p07::seq_buffer::Scratch<PsiPoint> scratch(N);
 #endif
-    };
 
     std::vector<double> t_upiti;
     for (int rep = 0; rep <= ponavljanja; ++rep) {   // rep 0 = zagrijavanje
         auto t0 = Clock::now();
-        sve_upite();
+#ifdef P07_SEQ_BUFFER
+        obradi_grupu_upita_sa_baferom(tree, kutije, pravougaonici, valjani, rezultati, scratch);
+#else
+        obradi_grupu_upita(tree, kutije, pravougaonici, rezultati, raspored);
+#endif
         auto t1 = Clock::now();
         if (rep > 0) t_upiti.push_back(sekunde(t0, t1));
     }
@@ -223,14 +266,22 @@ int main(int argc, char** argv) {
     std::printf("OpenMP schedule:              %s\n", raspored.c_str());
 #endif
     std::printf("Ukupno pronadjenih (K):       %llu\n", (unsigned long long)ukupno);
+#ifdef P07_SEQ_BUFFER
+    std::printf("Prosjecno po pravougaoniku:   %.1f\n", M ? (double)ukupno / M : 0.0);
+#else
     std::printf("Prosjecno po pravougaoniku:   %.1f\n", (double)ukupno / M);
+#endif
     std::printf("Kontrolni zbir:               %llu\n", (unsigned long long)kontrolni);
 
     std::printf("\n-------------------- VRIJEME (medijan od %d) --------------------\n", ponavljanja);
     std::printf("Izgradnja stabla:             %.2f ms\n", izg * 1000);
     std::printf("Svi upiti:                    %.2f ms\n", upi * 1000);
     std::printf("Ukupno (izgradnja + upiti):   %.2f ms\n", (izg + upi) * 1000);
+#ifdef P07_SEQ_BUFFER
+    std::printf("Vrijeme po upitu:             %.2f us\n", M ? upi / M * 1e6 : 0.0);
+#else
     std::printf("Vrijeme po upitu:             %.2f us\n", upi / M * 1e6);
+#endif
     std::printf("QPS (upita u sekundi):        %.0f\n", M / upi);
 
     if (provjera) {

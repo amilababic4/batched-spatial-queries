@@ -1,0 +1,4 @@
+mode=verify N=200000 M=2000 w=0.005000 dist=uniform seed=42 repeats=7 build_repeats=7 initial=64
+generisanje_i_psi_konverzija_ms=5.071467
+priprema_kutija_i_validnosti_ms=0.021300
+PROSAO: rubni slucajevi, rast buffera i svi sortirani ID-jevi odgovaraju brute-force referenci.

@@ -1,0 +1,15 @@
+launch exit=1
+attach exit=0
+attach_report exit=0
+wrapper exit=0
+wrapper_report exit=0
+kontrola_bez_pdb exit=0
+kontrola_report exit=0
+wrapper_ref exit=0
+report_ref exit=0
+wrapper_v1 exit=0
+report_v1 exit=0
+wrapper_v2 exit=0
+report_v2 exit=0
+wrapper_v3 exit=0
+report_v3 exit=0

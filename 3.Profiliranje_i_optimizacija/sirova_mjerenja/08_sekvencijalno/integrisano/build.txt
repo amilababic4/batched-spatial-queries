@@ -1,0 +1,55 @@
+-- 
+
+---------------------------- PARLAY -----------------------------
+-- PARLAY VERSION 2.3.1
+-- ---------------------------- General configuration -----------------------------
+-- CMake Generator:                Unix Makefiles
+-- Compiler:                       GNU 14.2.0
+-- Build type:                     Release
+-- CMAKE_CXX_FLAGS:                
+-- CMAKE_CXX_FLAGS_DEBUG:          -g
+-- CMAKE_CXX_FLAGS_RELEASE:        -O3 -DNDEBUG
+-- CMAKE_CXX_FLAGS_RELWITHDEBINFO: -O2 -g -DNDEBUG -fno-omit-frame-pointer
+-- CMAKE_EXE_LINKER_FLAGS          
+-- CMAKE_INSTALL_PREFIX:           /usr/local
+-- -------------------------------- Library options ------------------------------
+-- Using Parlay scheduler. Switch with -DPARLAY_{CILKPLUS,OPENCILK,OPENMP,TBB}=On
+-- Elastic parallelism enabled. Disable with -DPARLAY_ELASTIC_PARALLELISM=Off
+-- ------------------------------- Static Analysis --------------------------------
+-- cppcheck:                     Disabled (enable with -DENABLE_CPPCHECK=On)
+-- clang-tidy:                   Disabled (enable with -DENABLE_CLANG_TIDY=On)
+-- include-what-you-use:         Disabled (enable with -DENABLE_IWYU=On)
+-- ---------------------------------- Unit Tests ----------------------------------
+-- testing: Disabled (enable with -DPARLAY_TEST=On)
+-- ---------------------------------- Benchmarks ----------------------------------
+-- benchmarks: Disabled (enable with -DPARLAY_BENCHMARK=On)
+-- ----------------------------------- Examples -----------------------------------
+-- examples: Disabled (enable with -DPARLAY_EXAMPLES=On)
+-- example data: Off (add -DPARLAY_EXAMPLE_DATA=On to download)
+-- ---------------------------- END PARLAY -----------------------------
+
+
+-- 
+
+---------------------------- LIBMORTON -----------------------------
+-- ---------------------------- END LIBMORTON -----------------------------
+
+
+-- 
+
+---------------------------- PSI -----------------------------
+-- cppcheck:                     Disabled (enable with -DPSI_ENABLE_CPPCHECK=On)
+-- clang-tidy:                   Disabled (enable with -DPSI_ENABLE_CLANG_TIDY=On)
+-- include-what-you-use:         Disabled (enable with -DPSI_ENABLE_IWYU=On)
+-- ---------------------------- END PSI -----------------------------
+
+
+-- Configuring done (4.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/dt_user/prs-integration-check
+[ 50%] Building CXX object CMakeFiles/psi_seq.dir/src/psi_benchmark.cpp.o
+[100%] Linking CXX executable psi_seq
+[100%] Built target psi_seq
+[100%] Built target psi_seq_opt
+[100%] Built target testovi
+[100%] Built target testovi_psi_seq_opt

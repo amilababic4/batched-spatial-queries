@@ -1,0 +1,7 @@
+N=20000 M=200 w=0.020 dist=uniform seed=42 repeats=7 AVX2=da mode=compare
+priprema_ms=0.833
+ref uzorci_ms=9.841,9.625,9.680,9.489,9.689,10.604,10.182, medijan_ms=9.689 pogodaka=1632 checksum=1622871102
+v1 uzorci_ms=8.640,8.676,8.604,9.828,9.188,8.656,9.665, medijan_ms=8.676 pogodaka=1632 checksum=1622871102
+v2 uzorci_ms=8.042,8.094,7.935,9.046,8.399,9.419,14.143, medijan_ms=8.399 pogodaka=1632 checksum=1622871102
+v3 uzorci_ms=8.392,8.344,9.251,13.440,8.629,8.445,9.740, medijan_ms=8.629 pogodaka=1632 checksum=1622871102
+v4 uzorci_ms=0.933,0.931,0.944,0.951,0.912,2.261,0.979, medijan_ms=0.944 pogodaka=1632 checksum=1622871102

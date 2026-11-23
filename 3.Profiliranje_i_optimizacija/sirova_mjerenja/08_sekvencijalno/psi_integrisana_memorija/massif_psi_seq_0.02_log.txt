@@ -1,0 +1,6 @@
+==21485== Massif, a heap profiler
+==21485== Copyright (C) 2003-2017, and GNU GPL'd, by Nicholas Nethercote
+==21485== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==21485== Command: /home/dt_user/prs-integration-check/psi_seq --n 200000 --m 2000 --dist uniform --w 0.02 --seed 42 --repeats 1 --no-check
+==21485== 
+==21485== 

@@ -1,0 +1,6 @@
+==17828== Massif, a heap profiler
+==17828== Copyright (C) 2003-2017, and GNU GPL'd, by Nicholas Nethercote
+==17828== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==17828== Command: /home/dt_user/prs-eksperimenti/poredjenje5/poredjenje --mode ref --n 200000 --m 200 --w 0.02 --repeats 1
+==17828== 
+==17828== 

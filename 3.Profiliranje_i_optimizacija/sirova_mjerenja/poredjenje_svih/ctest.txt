@@ -1,0 +1,8 @@
+Internal ctest changing into directory: /home/dt_user/prs-markeri
+Test project /home/dt_user/prs-markeri
+    Start 1: testovi
+1/1 Test #1: testovi ..........................   Passed    0.23 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.24 sec

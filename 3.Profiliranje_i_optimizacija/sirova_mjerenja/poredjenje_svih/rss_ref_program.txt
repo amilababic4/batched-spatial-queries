@@ -1,0 +1,3 @@
+N=200000 M=200 w=0.020 dist=uniform seed=42 repeats=1 AVX2=da mode=ref
+priprema_ms=3.286
+ref uzorci_ms=103.907, medijan_ms=103.907 pogodaka=15637 checksum=158093434441

@@ -1,0 +1,8 @@
+2026-11-22T22:30:05+01:00
+Linux ULTRA-1 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+g++-14 (Ubuntu 14.2.0-4ubuntu2~24.04.1) 14.2.0
+62f140389986cb6c393efc77137173496ed44677bc64621e096de47c90f220fd  /mnt/c/Users/DT User/Desktop/VI semestar/PRS/3.Profiliranje_i_optimizacija/08_psi_sekvencijalni_eksperiment.cpp
+d37b68e7a64dee22be7ba4d76c8a4b05979702a1cd1b129e284d2f73d6780b2a  /mnt/c/Users/DT User/Desktop/VI semestar/PRS/3.Profiliranje_i_optimizacija/08_v5_maska_x.cpp
+54dad29b66fae5c87a95f5e4e7d38bf79dacc3019f9a6fb87ccb7c9594c44700  /home/dt_user/prs-seq-opt/psi_compare
+e568e097165e8d5de81e69a63a90507e57a8c579ac7a692f81cbe5262c90d4d3  /home/dt_user/prs-seq-opt/psi_compare_prof
+d6ef94e6b75d3cb4b96f0f99a02d0d16933d8d3555db0d3e676310faebb7ff96  /home/dt_user/prs-seq-opt/v5_compare

@@ -1,0 +1,3389 @@
+desc: --stacks=no --detailed-freq=1 --massif-out-file=/mnt/c/Users/DT User/Desktop/VI semestar/PRS/3.Profiliranje_i_optimizacija/sirova_mjerenja/poredjenje_svih/massif_ref.out
+cmd: /home/dt_user/prs-eksperimenti/poredjenje5/poredjenje --mode ref --n 200000 --m 200 --w 0.02 --repeats 1
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=detailed
+n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+#-----------
+snapshot=1
+#-----------
+time=1968614
+mem_heap_B=4873728
+mem_heap_extra_B=464
+mem_stacks_B=0
+heap_tree=detailed
+n2: 4873728 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+#-----------
+snapshot=2
+#-----------
+time=21388373
+mem_heap_B=4880128
+mem_heap_extra_B=472
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4880128 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 6400 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=3
+#-----------
+time=29549272
+mem_heap_B=4887232
+mem_heap_extra_B=520
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4887232 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 13504 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=4
+#-----------
+time=35112885
+mem_heap_B=4889024
+mem_heap_extra_B=552
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4889024 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 15296 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=39143507
+mem_heap_B=4889796
+mem_heap_extra_B=580
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4889796 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 16068 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=6
+#-----------
+time=45607404
+mem_heap_B=4891584
+mem_heap_extra_B=592
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4891584 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 17856 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=7
+#-----------
+time=49727357
+mem_heap_B=4892868
+mem_heap_extra_B=628
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4892868 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 19140 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=54741672
+mem_heap_B=4894656
+mem_heap_extra_B=640
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4894656 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 20928 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=9
+#-----------
+time=61884034
+mem_heap_B=4896452
+mem_heap_extra_B=684
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4896452 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 22724 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=70160200
+mem_heap_B=4899056
+mem_heap_extra_B=720
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4899056 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 25328 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=11
+#-----------
+time=76953432
+mem_heap_B=4901060
+mem_heap_extra_B=756
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4901060 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 27332 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=82266976
+mem_heap_B=4902360
+mem_heap_extra_B=784
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4902360 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 28632 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=88675424
+mem_heap_B=4904640
+mem_heap_extra_B=800
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4904640 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 30912 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=94853437
+mem_heap_B=4906304
+mem_heap_extra_B=832
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4906304 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 32576 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=98900999
+mem_heap_B=4907712
+mem_heap_extra_B=848
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4907712 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 33984 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=107579098
+mem_heap_B=4910144
+mem_heap_extra_B=896
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4910144 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 36416 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=17
+#-----------
+time=112838644
+mem_heap_B=4911680
+mem_heap_extra_B=920
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4911680 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 37952 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=18
+#-----------
+time=117016312
+mem_heap_B=4913088
+mem_heap_extra_B=936
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4913088 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 39360 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=19
+#-----------
+time=123453009
+mem_heap_B=4914496
+mem_heap_extra_B=968
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4914496 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 40768 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=127719888
+mem_heap_B=4915904
+mem_heap_extra_B=984
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4915904 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 42176 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=132396121
+mem_heap_B=4917056
+mem_heap_extra_B=1008
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4917056 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 43328 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=22
+#-----------
+time=139454969
+mem_heap_B=4918596
+mem_heap_extra_B=1052
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4918596 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 44868 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=23
+#-----------
+time=146846307
+mem_heap_B=4920388
+mem_heap_extra_B=1084
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4920388 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 46660 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=24
+#-----------
+time=152133346
+mem_heap_B=4922176
+mem_heap_extra_B=1096
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4922176 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 48448 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=25
+#-----------
+time=158123665
+mem_heap_B=4923840
+mem_heap_extra_B=1128
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4923840 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 50112 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=26
+#-----------
+time=162843901
+mem_heap_B=4925120
+mem_heap_extra_B=1152
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4925120 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 51392 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=27
+#-----------
+time=170567942
+mem_heap_B=4927552
+mem_heap_extra_B=1184
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4927552 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 53824 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=28
+#-----------
+time=175551684
+mem_heap_B=4928704
+mem_heap_extra_B=1208
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4928704 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 54976 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=29
+#-----------
+time=183749267
+mem_heap_B=4930976
+mem_heap_extra_B=1248
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4930976 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 57248 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=190778923
+mem_heap_B=4933184
+mem_heap_extra_B=1272
+mem_stacks_B=0
+heap_tree=detailed
+n3: 4933184 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 59456 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=197064827
+mem_heap_B=4934848
+mem_heap_extra_B=1304
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4934848 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n1: 49920 0x10E284: allocate (new_allocator.h:151)
+  n1: 49920 0x10E284: allocate (allocator.h:196)
+   n1: 49920 0x10E284: allocate (alloc_traits.h:478)
+    n1: 49920 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 49920 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 49920 0x10E284: push_back (stl_vector.h:1294)
+       n1: 49920 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 49920 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 49920 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=204719906
+mem_heap_B=4937280
+mem_heap_extra_B=1336
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4937280 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n1: 52352 0x10E284: allocate (new_allocator.h:151)
+  n1: 52352 0x10E284: allocate (allocator.h:196)
+   n1: 52352 0x10E284: allocate (alloc_traits.h:478)
+    n1: 52352 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 52352 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 52352 0x10E284: push_back (stl_vector.h:1294)
+       n1: 52352 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 52352 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 52352 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=209102726
+mem_heap_B=4938432
+mem_heap_extra_B=1360
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4938432 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n1: 53504 0x10E284: allocate (new_allocator.h:151)
+  n1: 53504 0x10E284: allocate (allocator.h:196)
+   n1: 53504 0x10E284: allocate (alloc_traits.h:478)
+    n1: 53504 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 53504 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 53504 0x10E284: push_back (stl_vector.h:1294)
+       n1: 53504 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 53504 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 53504 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=34
+#-----------
+time=217294826
+mem_heap_B=4940400
+mem_heap_extra_B=1400
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4940400 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n1: 55472 0x10E284: allocate (new_allocator.h:151)
+  n1: 55472 0x10E284: allocate (allocator.h:196)
+   n1: 55472 0x10E284: allocate (alloc_traits.h:478)
+    n1: 55472 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 55472 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 55472 0x10E284: push_back (stl_vector.h:1294)
+       n1: 55472 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 55472 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 55472 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=35
+#-----------
+time=221935733
+mem_heap_B=4942144
+mem_heap_extra_B=1416
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4942144 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n1: 57216 0x10E284: allocate (new_allocator.h:151)
+  n1: 57216 0x10E284: allocate (allocator.h:196)
+   n1: 57216 0x10E284: allocate (alloc_traits.h:478)
+    n1: 57216 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 57216 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 57216 0x10E284: push_back (stl_vector.h:1294)
+       n1: 57216 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 57216 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 57216 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=36
+#-----------
+time=228922566
+mem_heap_B=4943936
+mem_heap_extra_B=1448
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4943936 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n1: 59008 0x10E284: allocate (new_allocator.h:151)
+  n1: 59008 0x10E284: allocate (allocator.h:196)
+   n1: 59008 0x10E284: allocate (alloc_traits.h:478)
+    n1: 59008 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 59008 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 59008 0x10E284: push_back (stl_vector.h:1294)
+       n1: 59008 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 59008 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 59008 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=37
+#-----------
+time=233883773
+mem_heap_B=4945472
+mem_heap_extra_B=1472
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4945472 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n1: 60544 0x10E284: allocate (new_allocator.h:151)
+  n1: 60544 0x10E284: allocate (allocator.h:196)
+   n1: 60544 0x10E284: allocate (alloc_traits.h:478)
+    n1: 60544 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 60544 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 60544 0x10E284: push_back (stl_vector.h:1294)
+       n1: 60544 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 60544 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 60544 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=38
+#-----------
+time=240281785
+mem_heap_B=4947264
+mem_heap_extra_B=1504
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4947264 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n1: 62336 0x10E284: allocate (new_allocator.h:151)
+  n1: 62336 0x10E284: allocate (allocator.h:196)
+   n1: 62336 0x10E284: allocate (alloc_traits.h:478)
+    n1: 62336 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 62336 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 62336 0x10E284: push_back (stl_vector.h:1294)
+       n1: 62336 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 62336 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 62336 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=39
+#-----------
+time=248701719
+mem_heap_B=4949184
+mem_heap_extra_B=1544
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4949184 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n1: 64256 0x10E284: allocate (new_allocator.h:151)
+  n1: 64256 0x10E284: allocate (allocator.h:196)
+   n1: 64256 0x10E284: allocate (alloc_traits.h:478)
+    n1: 64256 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 64256 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 64256 0x10E284: push_back (stl_vector.h:1294)
+       n1: 64256 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 64256 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 64256 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=40
+#-----------
+time=257274265
+mem_heap_B=4951456
+mem_heap_extra_B=1584
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4951456 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n1: 66528 0x10E284: allocate (new_allocator.h:151)
+  n1: 66528 0x10E284: allocate (allocator.h:196)
+   n1: 66528 0x10E284: allocate (alloc_traits.h:478)
+    n1: 66528 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 66528 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 66528 0x10E284: push_back (stl_vector.h:1294)
+       n1: 66528 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 66528 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 66528 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=41
+#-----------
+time=261841674
+mem_heap_B=4953152
+mem_heap_extra_B=1600
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4953152 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n1: 68224 0x10E284: allocate (new_allocator.h:151)
+  n1: 68224 0x10E284: allocate (allocator.h:196)
+   n1: 68224 0x10E284: allocate (alloc_traits.h:478)
+    n1: 68224 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 68224 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 68224 0x10E284: push_back (stl_vector.h:1294)
+       n1: 68224 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 68224 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 68224 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=42
+#-----------
+time=270254407
+mem_heap_B=4955328
+mem_heap_extra_B=1640
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4955328 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n1: 70400 0x10E284: allocate (new_allocator.h:151)
+  n1: 70400 0x10E284: allocate (allocator.h:196)
+   n1: 70400 0x10E284: allocate (alloc_traits.h:478)
+    n1: 70400 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 70400 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 70400 0x10E284: push_back (stl_vector.h:1294)
+       n1: 70400 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 70400 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 70400 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=43
+#-----------
+time=274780191
+mem_heap_B=4956228
+mem_heap_extra_B=1668
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4956228 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n1: 71300 0x10E284: allocate (new_allocator.h:151)
+  n1: 71300 0x10E284: allocate (allocator.h:196)
+   n1: 71300 0x10E284: allocate (alloc_traits.h:478)
+    n1: 71300 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 71300 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 71300 0x10E284: push_back (stl_vector.h:1294)
+       n1: 71300 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 71300 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 71300 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=44
+#-----------
+time=279934768
+mem_heap_B=4958016
+mem_heap_extra_B=1680
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4958016 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n1: 73088 0x10E284: allocate (new_allocator.h:151)
+  n1: 73088 0x10E284: allocate (allocator.h:196)
+   n1: 73088 0x10E284: allocate (alloc_traits.h:478)
+    n1: 73088 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 73088 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 73088 0x10E284: push_back (stl_vector.h:1294)
+       n1: 73088 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 73088 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 73088 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=45
+#-----------
+time=288301523
+mem_heap_B=4960324
+mem_heap_extra_B=1732
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4960324 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 75396 0x10E284: allocate (new_allocator.h:151)
+  n1: 75396 0x10E284: allocate (allocator.h:196)
+   n1: 75396 0x10E284: allocate (alloc_traits.h:478)
+    n1: 75396 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 75396 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 75396 0x10E284: push_back (stl_vector.h:1294)
+       n1: 75396 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 75396 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 75396 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=46
+#-----------
+time=292590603
+mem_heap_B=4962112
+mem_heap_extra_B=1744
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4962112 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 77184 0x10E284: allocate (new_allocator.h:151)
+  n1: 77184 0x10E284: allocate (allocator.h:196)
+   n1: 77184 0x10E284: allocate (alloc_traits.h:478)
+    n1: 77184 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 77184 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 77184 0x10E284: push_back (stl_vector.h:1294)
+       n1: 77184 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 77184 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 77184 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=298871468
+mem_heap_B=4963776
+mem_heap_extra_B=1776
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4963776 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 78848 0x10E284: allocate (new_allocator.h:151)
+  n1: 78848 0x10E284: allocate (allocator.h:196)
+   n1: 78848 0x10E284: allocate (alloc_traits.h:478)
+    n1: 78848 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 78848 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 78848 0x10E284: push_back (stl_vector.h:1294)
+       n1: 78848 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 78848 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 78848 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=48
+#-----------
+time=305503228
+mem_heap_B=4965632
+mem_heap_extra_B=1808
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4965632 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 80704 0x10E284: allocate (new_allocator.h:151)
+  n1: 80704 0x10E284: allocate (allocator.h:196)
+   n1: 80704 0x10E284: allocate (alloc_traits.h:478)
+    n1: 80704 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 80704 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 80704 0x10E284: push_back (stl_vector.h:1294)
+       n1: 80704 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 80704 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 80704 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=309891133
+mem_heap_B=4967168
+mem_heap_extra_B=1832
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4967168 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 82240 0x10E284: allocate (new_allocator.h:151)
+  n1: 82240 0x10E284: allocate (allocator.h:196)
+   n1: 82240 0x10E284: allocate (alloc_traits.h:478)
+    n1: 82240 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 82240 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 82240 0x10E284: push_back (stl_vector.h:1294)
+       n1: 82240 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 82240 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 82240 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=50
+#-----------
+time=312192203
+mem_heap_B=4968256
+mem_heap_extra_B=1840
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4968256 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 83328 0x10E284: allocate (new_allocator.h:151)
+  n1: 83328 0x10E284: allocate (allocator.h:196)
+   n1: 83328 0x10E284: allocate (alloc_traits.h:478)
+    n1: 83328 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 83328 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 83328 0x10E284: push_back (stl_vector.h:1294)
+       n1: 83328 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 83328 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 83328 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=51
+#-----------
+time=314394717
+mem_heap_B=4968516
+mem_heap_extra_B=1860
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4968516 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 83588 0x10E284: allocate (new_allocator.h:151)
+  n1: 83588 0x10E284: allocate (allocator.h:196)
+   n1: 83588 0x10E284: allocate (alloc_traits.h:478)
+    n1: 83588 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 83588 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 83588 0x10E284: push_back (stl_vector.h:1294)
+       n1: 83588 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 83588 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 83588 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=52
+#-----------
+time=316419621
+mem_heap_B=4969120
+mem_heap_extra_B=1864
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4969120 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 84192 0x10E284: allocate (new_allocator.h:151)
+  n1: 84192 0x10E284: allocate (allocator.h:196)
+   n1: 84192 0x10E284: allocate (alloc_traits.h:478)
+    n1: 84192 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 84192 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 84192 0x10E284: push_back (stl_vector.h:1294)
+       n1: 84192 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 84192 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 84192 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=53
+#-----------
+time=318963003
+mem_heap_B=4970304
+mem_heap_extra_B=1872
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4970304 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 85376 0x10E284: allocate (new_allocator.h:151)
+  n1: 85376 0x10E284: allocate (allocator.h:196)
+   n1: 85376 0x10E284: allocate (alloc_traits.h:478)
+    n1: 85376 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 85376 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 85376 0x10E284: push_back (stl_vector.h:1294)
+       n1: 85376 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 85376 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 85376 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=54
+#-----------
+time=320963636
+mem_heap_B=4970816
+mem_heap_extra_B=1880
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4970816 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 85888 0x10E284: allocate (new_allocator.h:151)
+  n1: 85888 0x10E284: allocate (allocator.h:196)
+   n1: 85888 0x10E284: allocate (alloc_traits.h:478)
+    n1: 85888 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 85888 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 85888 0x10E284: push_back (stl_vector.h:1294)
+       n1: 85888 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 85888 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 85888 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=55
+#-----------
+time=322948469
+mem_heap_B=4971076
+mem_heap_extra_B=1900
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4971076 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 86148 0x10E284: allocate (new_allocator.h:151)
+  n1: 86148 0x10E284: allocate (allocator.h:196)
+   n1: 86148 0x10E284: allocate (alloc_traits.h:478)
+    n1: 86148 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 86148 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 86148 0x10E284: push_back (stl_vector.h:1294)
+       n1: 86148 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 86148 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 86148 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=56
+#-----------
+time=324967417
+mem_heap_B=4971776
+mem_heap_extra_B=1904
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4971776 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 86848 0x10E284: allocate (new_allocator.h:151)
+  n1: 86848 0x10E284: allocate (allocator.h:196)
+   n1: 86848 0x10E284: allocate (alloc_traits.h:478)
+    n1: 86848 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 86848 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 86848 0x10E284: push_back (stl_vector.h:1294)
+       n1: 86848 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 86848 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 86848 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=57
+#-----------
+time=326942061
+mem_heap_B=4972192
+mem_heap_extra_B=1912
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4972192 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 87264 0x10E284: allocate (new_allocator.h:151)
+  n1: 87264 0x10E284: allocate (allocator.h:196)
+   n1: 87264 0x10E284: allocate (alloc_traits.h:478)
+    n1: 87264 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 87264 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 87264 0x10E284: push_back (stl_vector.h:1294)
+       n1: 87264 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 87264 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 87264 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=58
+#-----------
+time=329013081
+mem_heap_B=4972800
+mem_heap_extra_B=1920
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4972800 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 87872 0x10E284: allocate (new_allocator.h:151)
+  n1: 87872 0x10E284: allocate (allocator.h:196)
+   n1: 87872 0x10E284: allocate (alloc_traits.h:478)
+    n1: 87872 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 87872 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 87872 0x10E284: push_back (stl_vector.h:1294)
+       n1: 87872 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 87872 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 87872 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=59
+#-----------
+time=331174805
+mem_heap_B=4973504
+mem_heap_extra_B=1928
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4973504 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 88576 0x10E284: allocate (new_allocator.h:151)
+  n1: 88576 0x10E284: allocate (allocator.h:196)
+   n1: 88576 0x10E284: allocate (alloc_traits.h:478)
+    n1: 88576 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 88576 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 88576 0x10E284: push_back (stl_vector.h:1294)
+       n1: 88576 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 88576 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 88576 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=60
+#-----------
+time=333550862
+mem_heap_B=4974400
+mem_heap_extra_B=1936
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4974400 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 89472 0x10E284: allocate (new_allocator.h:151)
+  n1: 89472 0x10E284: allocate (allocator.h:196)
+   n1: 89472 0x10E284: allocate (alloc_traits.h:478)
+    n1: 89472 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 89472 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 89472 0x10E284: push_back (stl_vector.h:1294)
+       n1: 89472 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 89472 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 89472 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=61
+#-----------
+time=335708954
+mem_heap_B=4974660
+mem_heap_extra_B=1956
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4974660 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 89732 0x10E284: allocate (new_allocator.h:151)
+  n1: 89732 0x10E284: allocate (allocator.h:196)
+   n1: 89732 0x10E284: allocate (alloc_traits.h:478)
+    n1: 89732 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 89732 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 89732 0x10E284: push_back (stl_vector.h:1294)
+       n1: 89732 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 89732 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 89732 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=62
+#-----------
+time=337744578
+mem_heap_B=4975360
+mem_heap_extra_B=1960
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4975360 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 90432 0x10E284: allocate (new_allocator.h:151)
+  n1: 90432 0x10E284: allocate (allocator.h:196)
+   n1: 90432 0x10E284: allocate (alloc_traits.h:478)
+    n1: 90432 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 90432 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 90432 0x10E284: push_back (stl_vector.h:1294)
+       n1: 90432 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 90432 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 90432 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=63
+#-----------
+time=339966242
+mem_heap_B=4976064
+mem_heap_extra_B=1968
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4976064 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 91136 0x10E284: allocate (new_allocator.h:151)
+  n1: 91136 0x10E284: allocate (allocator.h:196)
+   n1: 91136 0x10E284: allocate (alloc_traits.h:478)
+    n1: 91136 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 91136 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 91136 0x10E284: push_back (stl_vector.h:1294)
+       n1: 91136 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 91136 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 91136 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=64
+#-----------
+time=342127588
+mem_heap_B=4976576
+mem_heap_extra_B=1976
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4976576 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 91648 0x10E284: allocate (new_allocator.h:151)
+  n1: 91648 0x10E284: allocate (allocator.h:196)
+   n1: 91648 0x10E284: allocate (alloc_traits.h:478)
+    n1: 91648 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 91648 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 91648 0x10E284: push_back (stl_vector.h:1294)
+       n1: 91648 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 91648 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 91648 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=65
+#-----------
+time=344355869
+mem_heap_B=4977216
+mem_heap_extra_B=1984
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4977216 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 92288 0x10E284: allocate (new_allocator.h:151)
+  n1: 92288 0x10E284: allocate (allocator.h:196)
+   n1: 92288 0x10E284: allocate (alloc_traits.h:478)
+    n1: 92288 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 92288 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 92288 0x10E284: push_back (stl_vector.h:1294)
+       n1: 92288 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 92288 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 92288 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=66
+#-----------
+time=346451477
+mem_heap_B=4977476
+mem_heap_extra_B=2004
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4977476 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 92548 0x10E284: allocate (new_allocator.h:151)
+  n1: 92548 0x10E284: allocate (allocator.h:196)
+   n1: 92548 0x10E284: allocate (alloc_traits.h:478)
+    n1: 92548 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 92548 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 92548 0x10E284: push_back (stl_vector.h:1294)
+       n1: 92548 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 92548 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 92548 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=67
+#-----------
+time=348654704
+mem_heap_B=4978176
+mem_heap_extra_B=2008
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4978176 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 93248 0x10E284: allocate (new_allocator.h:151)
+  n1: 93248 0x10E284: allocate (allocator.h:196)
+   n1: 93248 0x10E284: allocate (alloc_traits.h:478)
+    n1: 93248 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 93248 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 93248 0x10E284: push_back (stl_vector.h:1294)
+       n1: 93248 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 93248 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 93248 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=68
+#-----------
+time=351023740
+mem_heap_B=4979008
+mem_heap_extra_B=2016
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4979008 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 94080 0x10E284: allocate (new_allocator.h:151)
+  n1: 94080 0x10E284: allocate (allocator.h:196)
+   n1: 94080 0x10E284: allocate (alloc_traits.h:478)
+    n1: 94080 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 94080 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 94080 0x10E284: push_back (stl_vector.h:1294)
+       n1: 94080 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 94080 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 94080 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=69
+#-----------
+time=353081155
+mem_heap_B=4979268
+mem_heap_extra_B=2036
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4979268 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 94340 0x10E284: allocate (new_allocator.h:151)
+  n1: 94340 0x10E284: allocate (allocator.h:196)
+   n1: 94340 0x10E284: allocate (alloc_traits.h:478)
+    n1: 94340 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 94340 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 94340 0x10E284: push_back (stl_vector.h:1294)
+       n1: 94340 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 94340 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 94340 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=70
+#-----------
+time=355276830
+mem_heap_B=4980160
+mem_heap_extra_B=2040
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4980160 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 95232 0x10E284: allocate (new_allocator.h:151)
+  n1: 95232 0x10E284: allocate (allocator.h:196)
+   n1: 95232 0x10E284: allocate (alloc_traits.h:478)
+    n1: 95232 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 95232 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 95232 0x10E284: push_back (stl_vector.h:1294)
+       n1: 95232 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 95232 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 95232 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=71
+#-----------
+time=357617055
+mem_heap_B=4981056
+mem_heap_extra_B=2048
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4981056 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 96128 0x10E284: allocate (new_allocator.h:151)
+  n1: 96128 0x10E284: allocate (allocator.h:196)
+   n1: 96128 0x10E284: allocate (alloc_traits.h:478)
+    n1: 96128 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 96128 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 96128 0x10E284: push_back (stl_vector.h:1294)
+       n1: 96128 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 96128 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 96128 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=72
+#-----------
+time=359707119
+mem_heap_B=4981316
+mem_heap_extra_B=2068
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4981316 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 96388 0x10E284: allocate (new_allocator.h:151)
+  n1: 96388 0x10E284: allocate (allocator.h:196)
+   n1: 96388 0x10E284: allocate (alloc_traits.h:478)
+    n1: 96388 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 96388 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 96388 0x10E284: push_back (stl_vector.h:1294)
+       n1: 96388 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 96388 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 96388 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=73
+#-----------
+time=361314880
+mem_heap_B=4982080
+mem_heap_extra_B=2064
+mem_stacks_B=0
+heap_tree=peak
+n4: 4982080 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 97152 0x10E284: allocate (new_allocator.h:151)
+  n1: 97152 0x10E284: allocate (allocator.h:196)
+   n1: 97152 0x10E284: allocate (alloc_traits.h:478)
+    n1: 97152 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 97152 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 97152 0x10E284: push_back (stl_vector.h:1294)
+       n1: 97152 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 97152 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 97152 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=74
+#-----------
+time=363499965
+mem_heap_B=4982340
+mem_heap_extra_B=2084
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4982340 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 97412 0x10E284: allocate (new_allocator.h:151)
+  n1: 97412 0x10E284: allocate (allocator.h:196)
+   n1: 97412 0x10E284: allocate (alloc_traits.h:478)
+    n1: 97412 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 97412 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 97412 0x10E284: push_back (stl_vector.h:1294)
+       n1: 97412 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 97412 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 97412 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=75
+#-----------
+time=365574092
+mem_heap_B=4983040
+mem_heap_extra_B=2088
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4983040 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 98112 0x10E284: allocate (new_allocator.h:151)
+  n1: 98112 0x10E284: allocate (allocator.h:196)
+   n1: 98112 0x10E284: allocate (alloc_traits.h:478)
+    n1: 98112 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 98112 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 98112 0x10E284: push_back (stl_vector.h:1294)
+       n1: 98112 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 98112 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 98112 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 11200 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=76
+#-----------
+time=712628426
+mem_heap_B=4987464
+mem_heap_extra_B=2104
+mem_stacks_B=0
+heap_tree=detailed
+n4: 4987464 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4800000 0x117583: allocate (new_allocator.h:151)
+  n1: 4800000 0x117583: allocate (allocator.h:196)
+   n1: 4800000 0x117583: allocate (alloc_traits.h:478)
+    n1: 4800000 0x117583: _M_allocate (stl_vector.h:380)
+     n1: 4800000 0x117583: _M_create_storage (stl_vector.h:398)
+      n1: 4800000 0x117583: _Vector_base (stl_vector.h:334)
+       n1: 4800000 0x117583: vector (stl_vector.h:571)
+        n1: 4800000 0x117583: _M_fill_assign (vector.tcc:278)
+         n1: 4800000 0x117583: _M_fill_assign (vector.tcc:270)
+          n1: 4800000 0x117583: assign (stl_vector.h:809)
+           n1: 4800000 0x117583: p07::generisi(p07::Postavke const&, std::vector<p07::Point, std::allocator<p07::Point> >&, std::vector<p07::Rect, std::allocator<p07::Rect> >&) (podaci.h:50)
+            n0: 4800000 0x10B9CE: main (05_poredjenje_svih.cpp:62)
+ n1: 98432 0x10E284: allocate (new_allocator.h:151)
+  n1: 98432 0x10E284: allocate (allocator.h:196)
+   n1: 98432 0x10E284: allocate (alloc_traits.h:478)
+    n1: 98432 0x10E284: _M_allocate (stl_vector.h:380)
+     n1: 98432 0x10E284: _M_realloc_append<int const&> (vector.tcc:596)
+      n1: 98432 0x10E284: push_back (stl_vector.h:1294)
+       n1: 98432 0x10E284: referenca(std::vector<p07::Point, std::allocator<p07::Point> > const&, std::vector<p07::Rect, std::allocator<p07::Rect> > const&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >&) (04_verzija_spatial_queries.cpp:69)
+        n1: 98432 0x11023B: main::{lambda(int)#1}::operator()(int) const (05_poredjenje_svih.cpp:25)
+         n0: 98432 0x10B54B: main (05_poredjenje_svih.cpp:68)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n1: 73728 0x401F58F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+      n1: 73728 0xA: ???
+       n1: 73728 0x1FFF000416: ???
+        n1: 73728 0x1FFF00044C: ???
+         n1: 73728 0x1FFF000453: ???
+          n1: 73728 0x1FFF000457: ???
+           n1: 73728 0x1FFF00045B: ???
+            n1: 73728 0x1FFF000462: ???
+             n1: 73728 0x1FFF000466: ???
+              n1: 73728 0x1FFF00046A: ???
+               n1: 73728 0x1FFF00046E: ???
+                n1: 73728 0x1FFF000473: ???
+                 n0: 73728 0x1FFF00047D: ???
+ n0: 15304 in 4 places, all below massif's threshold (1.00%)

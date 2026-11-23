@@ -1,0 +1,15 @@
+Function,CPU Time,CPU Time:Effective Time,CPU Time:Spin Time,CPU Time:Overhead Time,Module,Function (Full),Source File,Start Address
+verzija4_avx2,1.645524,1.645524,0.0,0.0,poredjenje,verzija4_avx2,04_verzija_spatial_queries.cpp,0x13b7
+_mm256_cmp_pd,1.217345,1.217345,0.0,0.0,poredjenje,"_mm256_cmp_pd(, void, _dS_, int)",avxintrin.h,0x66fb
+_mm256_loadu_pd,0.943468,0.943468,0.0,0.0,poredjenje,_mm256_loadu_pd(double const*),avxintrin.h,0x66d5
+_mm256_and_pd,0.706376,0.706376,0.0,0.0,poredjenje,"_mm256_and_pd(, void, _dS_)",avxintrin.h,0x6702
+_mm256_cmp_pd,0.604225,0.604225,0.0,0.0,poredjenje,"_mm256_cmp_pd(, void, _dS_, int)",avxintrin.h,0x66e0
+_Z18_mm256_movemask_pdDv4_d,0.533004,0.533004,0.0,0.0,poredjenje,_Z18_mm256_movemask_pdDv4_d,avxintrin.h,0x670a
+_mm256_and_pd,0.474136,0.474136,0.0,0.0,poredjenje,"_mm256_and_pd(, void, _dS_)",avxintrin.h,0x66ed
+"std::vector<int, std::allocator<int>>::push_back",0.448060,0.448060,0.0,0.0,poredjenje,"std::vector<int, std::allocator<int>>::push_back(int const&)",stl_vector.h,0x13b7
+_mm256_and_pd,0.380458,0.380458,0.0,0.0,poredjenje,"_mm256_and_pd(, void, _dS_)",avxintrin.h,0x6706
+_mm256_loadu_pd,0.363478,0.363478,0.0,0.0,poredjenje,_mm256_loadu_pd(double const*),avxintrin.h,0x66c0
+_mm256_cmp_pd,0.304460,0.304460,0.0,0.0,poredjenje,"_mm256_cmp_pd(, void, _dS_, int)",avxintrin.h,0x66d9
+_mm256_cmp_pd,0.253552,0.253552,0.0,0.0,poredjenje,"_mm256_cmp_pd(, void, _dS_, int)",avxintrin.h,0x66f1
+"std::vector<int, std::allocator<int>>::operator[]",0.016919,0.016919,0.0,0.0,poredjenje,"std::vector<int, std::allocator<int>>::operator[](unsigned long) const",stl_vector.h,0x675b
+"std::vector<p07::Rect, std::allocator<p07::Rect>>::size",0.008523,0.008523,0.0,0.0,poredjenje,"std::vector<p07::Rect, std::allocator<p07::Rect>>::size(void) const",stl_vector.h,0x65fb

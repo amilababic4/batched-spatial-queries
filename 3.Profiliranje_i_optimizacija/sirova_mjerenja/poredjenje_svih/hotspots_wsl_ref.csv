@@ -1,0 +1,5 @@
+Function,CPU Time,CPU Time:Effective Time,CPU Time:Spin Time,CPU Time:Overhead Time,Module,Function (Full),Source File,Start Address
+p07::unutra,6.616813,6.616813,0.0,0.0,poredjenje,"p07::unutra(double, double, p07::Rect const&)",podaci.h,0x6168
+referenca,3.265906,3.265906,0.0,0.0,poredjenje,referenca,04_verzija_spatial_queries.cpp,0x139f
+"std::vector<p07::Rect, std::allocator<p07::Rect>>::operator[]",0.346465,0.346465,0.0,0.0,poredjenje,"std::vector<p07::Rect, std::allocator<p07::Rect>>::operator[](unsigned long) const",stl_vector.h,0x6160
+"std::vector<int, std::allocator<int>>::push_back",0.059627,0.059627,0.0,0.0,poredjenje,"std::vector<int, std::allocator<int>>::push_back(int const&)",stl_vector.h,0x139f

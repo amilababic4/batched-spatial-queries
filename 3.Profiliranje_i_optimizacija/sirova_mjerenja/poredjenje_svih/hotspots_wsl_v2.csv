@@ -1,0 +1,10 @@
+Function,CPU Time,CPU Time:Effective Time,CPU Time:Spin Time,CPU Time:Overhead Time,Module,Function (Full),Source File,Start Address
+verzija2,2.206905,2.206905,0.0,0.0,poredjenje,verzija2,04_verzija_spatial_queries.cpp,0x13c6
+p07::unutra,1.690533,1.690533,0.0,0.0,poredjenje,"p07::unutra(double, double, p07::Rect const&)",podaci.h,0x72b7
+p07::unutra,1.510256,1.510256,0.0,0.0,poredjenje,"p07::unutra(double, double, p07::Rect const&)",podaci.h,0x7316
+p07::unutra,1.355026,1.355026,0.0,0.0,poredjenje,"p07::unutra(double, double, p07::Rect const&)",podaci.h,0x7246
+p07::unutra,1.185961,1.185961,0.0,0.0,poredjenje,"p07::unutra(double, double, p07::Rect const&)",podaci.h,0x7377
+"std::vector<double, std::allocator<double>>::operator[]",0.283747,0.283747,0.0,0.0,poredjenje,"std::vector<double, std::allocator<double>>::operator[](unsigned long) const",stl_vector.h,0x723b
+"std::vector<int, std::allocator<int>>::push_back",0.059266,0.059266,0.0,0.0,poredjenje,"std::vector<int, std::allocator<int>>::push_back(int const&)",stl_vector.h,0x13c6
+"std::vector<int, std::allocator<int>>::push_back",0.021164,0.021164,0.0,0.0,poredjenje,"std::vector<int, std::allocator<int>>::push_back(int const&)",stl_vector.h,0x73aa
+"std::vector<int, std::allocator<int>>::push_back",0.016948,0.016948,0.0,0.0,poredjenje,"std::vector<int, std::allocator<int>>::push_back(int const&)",stl_vector.h,0x13c6

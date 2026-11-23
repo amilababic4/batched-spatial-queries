@@ -1,0 +1,6 @@
+==17162== Massif, a heap profiler
+==17162== Copyright (C) 2003-2017, and GNU GPL'd, by Nicholas Nethercote
+==17162== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==17162== Command: /home/dt_user/prs-eksperimenti/v4/verzija4 --mode v4 --n 200000 --m 2000 --w 0.02 --repeats 1
+==17162== 
+==17162== 

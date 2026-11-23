@@ -1,0 +1,21 @@
+==================== psi_seq_opt (serijski, ponovna upotreba bafera) ====================
+Tacaka (N):                   200000
+Pravougaonika (M):            2000
+Sirina pravougaonika (w):     0.1
+Raspodjela tacaka:            clustered
+Broj niti:                    1
+Ukupno pronadjenih (K):       3783473
+Prosjecno po pravougaoniku:   1891.7
+Kontrolni zbir:               395036598527297
+
+-------------------- VRIJEME (medijan od 1) --------------------
+Izgradnja stabla:             22.69 ms
+Svi upiti:                    14.79 ms
+Ukupno (izgradnja + upiti):   37.48 ms
+Vrijeme po upitu:             7.40 us
+QPS (upita u sekundi):        135223
+
+-------------------- PROVJERA --------------------
+Brute force (1 prolaz, 1 nit): 1097.24 ms
+Ubrzanje upita u odnosu na brute force: 74.2x
+OK: svih 2000 upita daje iste id-jeve kao brute force.

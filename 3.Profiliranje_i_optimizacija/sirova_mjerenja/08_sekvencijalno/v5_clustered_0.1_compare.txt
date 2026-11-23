@@ -1,0 +1,4 @@
+N=200000 M=2000 w=0.100 dist=clustered seed=42 repeats=7 AVX2=da
+generisanje_soa_i_upita_ms=6.304
+v4 uzorci_ms=163.056,163.922,162.869,170.729,167.486,169.068,163.149, medijan_ms=163.922 pogodaka=3783473 checksum=395036598527297
+v5 uzorci_ms=363.727,353.639,352.950,352.779,354.588,349.033,361.435, medijan_ms=353.639 pogodaka=3783473 checksum=395036598527297

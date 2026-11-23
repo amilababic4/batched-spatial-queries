@@ -1,0 +1,14 @@
+Function,CPU Time,CPU Time:Effective Time,CPU Time:Spin Time,CPU Time:Overhead Time,Module,Function (Full),Source File,Start Address
+verzija4_avx2,0.764824,0.764824,0.0,0.0,verzija4,verzija4_avx2,04_verzija_spatial_queries.cpp,0x1318
+_mm256_loadu_pd,0.572404,0.572404,0.0,0.0,verzija4,_mm256_loadu_pd(double const*),avxintrin.h,0x5305
+_mm256_cmp_pd,0.564916,0.564916,0.0,0.0,verzija4,"_mm256_cmp_pd(, void, _dS_, int)",avxintrin.h,0x532b
+_mm256_and_pd,0.353164,0.353164,0.0,0.0,verzija4,"_mm256_and_pd(, void, _dS_)",avxintrin.h,0x531d
+"std::vector<int, std::allocator<int>>::push_back",0.315655,0.315655,0.0,0.0,verzija4,"std::vector<int, std::allocator<int>>::push_back(int const&)",stl_vector.h,0x1318
+_mm256_and_pd,0.311516,0.311516,0.0,0.0,verzija4,"_mm256_and_pd(, void, _dS_)",avxintrin.h,0x5332
+_mm256_cmp_pd,0.240762,0.240762,0.0,0.0,verzija4,"_mm256_cmp_pd(, void, _dS_, int)",avxintrin.h,0x5310
+_mm256_and_pd,0.203582,0.203582,0.0,0.0,verzija4,"_mm256_and_pd(, void, _dS_)",avxintrin.h,0x5336
+_Z18_mm256_movemask_pdDv4_d,0.178593,0.178593,0.0,0.0,verzija4,_Z18_mm256_movemask_pdDv4_d,avxintrin.h,0x533a
+_mm256_loadu_pd,0.166075,0.166075,0.0,0.0,verzija4,_mm256_loadu_pd(double const*),avxintrin.h,0x52f0
+_mm256_cmp_pd,0.127925,0.127925,0.0,0.0,verzija4,"_mm256_cmp_pd(, void, _dS_, int)",avxintrin.h,0x5309
+_mm256_cmp_pd,0.107993,0.107993,0.0,0.0,verzija4,"_mm256_cmp_pd(, void, _dS_, int)",avxintrin.h,0x5321
+_mm256_set1_pd,0.012485,0.012485,0.0,0.0,verzija4,_mm256_set1_pd(double),avxintrin.h,0x5280

@@ -1,0 +1,45 @@
+vtune: Warning: Microarchitecture performance insights will not be available. Make sure the sampling driver is installed and enabled on your system.
+vtune: Collection started. To stop the collection, either press CTRL-C or enter from another console window: vtune -r /home/dt_user/prs-eksperimenti/poredjenje5/hotspots_v4 -command stop.
+N=200000 M=2000 w=0.020 dist=uniform seed=42 repeats=60 AVX2=da mode=v4
+priprema_ms=3.121
+v4 uzorci_ms=118.225,119.353,123.285,129.483,128.032,152.388,120.902,110.539,117.367,112.570,124.846,141.280,135.971,130.304,128.515,117.742,118.610,139.995,171.007,143.004,134.440,118.574,136.596,121.460,113.761,114.666,113.570,116.129,136.389,115.001,121.358,119.263,119.604,109.871,110.306,112.072,116.174,115.143,127.740,115.395,127.389,115.517,113.774,117.003,108.951,118.175,130.111,125.315,129.252,114.503,117.252,117.217,117.984,120.899,134.840,115.421,123.077,113.028,118.003,110.122, medijan_ms=118.610 pogodaka=158204 checksum=15841334427969
+vtune: Collection stopped.
+vtune: Using result path `/home/dt_user/prs-eksperimenti/poredjenje5/hotspots_v4'
+vtune: Executing actions  0 %                                                  vtune: Executing actions  0 % Finalizing results                               vtune: Executing actions  0 % Finalizing the result                            vtune: Executing actions  0 % Clearing the database                            vtune: Executing actions  7 % Clearing the database                            vtune: Executing actions  7 % Loading raw data to the database                 vtune: Executing actions  7 % Loading 'systemcollector-18147-ULTRA-1.sc' file  vtune: Executing actions 12 % Loading 'systemcollector-18147-ULTRA-1.sc' file  vtune: Executing actions 12 % Loading '18147-18152.0.trace' file               vtune: Executing actions 12 % Updating precomputed scalar metrics              vtune: Executing actions 14 % Updating precomputed scalar metrics              vtune: Executing actions 14 % Processing profile metrics and debug information vtune: Executing actions 19 % Processing profile metrics and debug information vtune: Executing actions 19 % Setting data model parameters                    vtune: Executing actions 19 % Resolving module symbols                         vtune: Executing actions 19 % Resolving information for `poredjenje'           vtune: Executing actions 19 % Resolving information for `libc.so.6'            vtune: Executing actions 20 % Resolving information for `libc.so.6'            vtune: Executing actions 22 % Resolving information for `libc.so.6'            vtune: Executing actions 22 % Resolving bottom user stack information          vtune: Executing actions 23 % Resolving bottom user stack information          vtune: Executing actions 23 % Resolving thread name information                vtune: Executing actions 24 % Resolving thread name information                vtune: Executing actions 24 % Resolving call target names for dynamic code     vtune: Executing actions 24 % Resolving interrupt name information             vtune: Executing actions 26 % Resolving interrupt name information             vtune: Executing actions 26 % Processing profile metrics and debug information vtune: Executing actions 28 % Processing profile metrics and debug information vtune: Executing actions 29 % Processing profile metrics and debug information vtune: Executing actions 30 % Processing profile metrics and debug information vtune: Executing actions 30 % Setting data model parameters                    vtune: Executing actions 30 % Precomputing frequently used data                vtune: Executing actions 30 % Precomputing frequently used data                vtune: Executing actions 31 % Precomputing frequently used data                vtune: Executing actions 33 % Precomputing frequently used data                vtune: Executing actions 34 % Precomputing frequently used data                vtune: Executing actions 36 % Precomputing frequently used data                vtune: Executing actions 36 % Updating precomputed scalar metrics              vtune: Executing actions 37 % Updating precomputed scalar metrics              vtune: Executing actions 37 % Discarding redundant overtime data               vtune: Executing actions 39 % Discarding redundant overtime data               vtune: Executing actions 39 % Saving the result                                vtune: Executing actions 41 % Saving the result                                vtune: Executing actions 42 % Saving the result                                vtune: Executing actions 49 % Saving the result                                vtune: Executing actions 50 % Saving the result                                vtune: Executing actions 50 % Generating a report                              vtune: Executing actions 50 % Setting data model parameters                    vtune: Executing actions 75 % Setting data model parameters                    vtune: Executing actions 75 % Generating a report                              Elapsed Time: 7.908s
+    CPU Time: 7.900s
+        Effective Time: 7.900s
+        Spin Time: 0s
+        Overhead Time: 0s
+    Total Thread Count: 1
+    Paused Time: 0s
+
+Top Hotspots
+Function         Module      CPU Time  % of CPU Time(%)
+---------------  ----------  --------  ----------------
+verzija4_avx2    poredjenje    1.646s             20.8%
+_mm256_cmp_pd    poredjenje    1.217s             15.4%
+_mm256_loadu_pd  poredjenje    0.943s             11.9%
+_mm256_and_pd    poredjenje    0.706s              8.9%
+_mm256_cmp_pd    poredjenje    0.604s              7.6%
+[Others]         N/A           2.783s             35.2%
+Collection and Platform Info
+    Application Command Line: /home/dt_user/prs-eksperimenti/poredjenje5/poredjenje "--mode" "v4" "--n" "200000" "--m" "2000" "--w" "0.02" "--repeats" "60" 
+    Operating System: 6.6.87.2-microsoft-standard-WSL2 DISTRIB_ID=Ubuntu DISTRIB_RELEASE=24.04 DISTRIB_CODENAME=noble DISTRIB_DESCRIPTION="Ubuntu 24.04.5 LTS"
+    Computer Name: ULTRA-1
+    Result Size: 3.8 MB 
+    Collection start time: 15:06:27 22/11/2026 UTC
+    Collection stop time: 15:06:35 22/11/2026 UTC
+    Collector Type: User-mode sampling and tracing
+    CPU
+        Name: Unknown
+        Frequency: 2.611 GHz
+        Logical CPU Count: 12
+        Cache Allocation Technology
+            Level 2 capability: not detected
+            Level 3 capability: not detected
+
+If you want to skip descriptions of detected performance issues in the report,
+enter: vtune -report summary -report-knob show-issues=false -r <my_result_dir>.
+Alternatively, you may view the report in the csv format: vtune -report
+<report_name> -format=csv.
+vtune: Executing actions 100 % Generating a report                             vtune: Executing actions 100 % done                                            

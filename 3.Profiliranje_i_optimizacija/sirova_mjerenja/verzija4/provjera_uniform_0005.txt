@@ -1,0 +1,1 @@
+PROSAO: rubni slucajevi i identicni ID-jevi svih upita; AVX2=da

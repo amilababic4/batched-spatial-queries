@@ -1,0 +1,39 @@
+﻿Datum: 2026-11-22T23:04:51.9392012+01:00
+Ulaz: N=200000 M=20000 w=0.02 dist=uniform seed=42 repeats=20 --no-check
+Stvarni projektni cilj psi_seq ili psi_seq_opt, Windows clang++ -O3 -DNDEBUG, CodeView/PDB, P07_PROFILE_MARKERS.
+Profile markers oznacavaju projektne funkcije i mogu promijeniti performanse u odnosu na standardni Release build.
+Windows cmd.exe uz VTune -follow-child; mjeri se cijeli proces, ukljucujuci izgradnje i upite.
+Provjera ispravnosti izvrsena je odvojeno bez --no-check.
+
+
+Algorithm : SHA256
+Hash      : AE6C6F2005DD2FBAA9703F33AFC5D15AE15FAAFB2121E2CF3D13B06BF42D902E
+Path      : C:\Users\DT User\Desktop\VI semestar\PRS\3.Profiliranje_i_optimizacija\windows_build\08_psi_final_pdb\psi_s
+            eq_pdb.exe
+
+Algorithm : SHA256
+Hash      : 4A31C8E3A7B270536F3C9C22AC5E68599FB296F29DC97036AE5B48B3605E48F9
+Path      : C:\Users\DT User\Desktop\VI semestar\PRS\3.Profiliranje_i_optimizacija\windows_build\08_psi_final_pdb\psi_s
+            eq_pdb.pdb
+
+Algorithm : SHA256
+Hash      : 3EB9A8EE717EF62E6E589BBED56704805EBF3EBC57EBAB47FAA98C60879303F4
+Path      : C:\Users\DT User\Desktop\VI semestar\PRS\3.Profiliranje_i_optimizacija\windows_build\08_psi_final_pdb\psi_s
+            eq_opt_pdb.exe
+
+Algorithm : SHA256
+Hash      : BDE9A9FEE85C77B45D2679EAE4CA283F88EEC20BC99711A8BD7F8911D9F08AEE
+Path      : C:\Users\DT User\Desktop\VI semestar\PRS\3.Profiliranje_i_optimizacija\windows_build\08_psi_final_pdb\psi_s
+            eq_opt_pdb.pdb
+
+Algorithm : SHA256
+Hash      : 0F91D4C625E5547880FDF453FC4B02252C754CF4F76147995F5161ABB2224793
+Path      : C:\Users\DT User\Desktop\VI semestar\PRS\src\psi_benchmark.cpp
+
+Algorithm : SHA256
+Hash      : 476675E821C6CF00461249A742356EFEEC21421799E6D5E60CC9038D3C8E684C
+Path      : C:\Users\DT User\Desktop\VI semestar\PRS\src\psi_seq_buffer.h
+
+
+
+
